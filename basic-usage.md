@@ -1,4 +1,4 @@
-### Basic usage
+# Basic usage
 
 Creating a simple string schema
 
@@ -32,18 +32,3 @@ User.parse({ username: "Ludwig" });
 type User = z.infer<typeof User>;
 // { username: string }
 ```
-<!-- 
----
-- [Next: Defining schemas](defining-schemas/README.md)
-- [Table of Contents](README.md)
--->
-
-
-
-<!-- https://pmarsceill.github.io/just-the-docs/ -->
-<!-- https://github.com/pmarsceill/just-the-docs/blob/master/_config.yml -->
-
-<!-- ---
-title: Basic usage
-nav_order: 1
---- -->
