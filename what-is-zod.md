@@ -1,8 +1,8 @@
 ---
 title: What is Zod?
 nav_order: 1
-last_modified_date: 2022-02-09
-# last_modified_date: 2022-02-09T00:00:00.000Z
+last_modified_date: 02/09/2022
+# last_modified_date: 2022-02-09
 ---
 
 ![logo.png](logo.png)
