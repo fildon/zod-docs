@@ -1,15 +1,13 @@
 ---
 title: What is Zod?
 nav_order: 1
-slug: /
+permalink: /
 last_modified_date: 2022-02-09
-# next_page:
-#     text: 'Next: Installation'
-#     link: ../installation
 ---
 
 ![logo.png](logo.png)
-# What is Zod?
+# {{ page.title }}
+<!-- # What is Zod? -->
 <!-- # <img src='logo.png' height='25px' /> What is Zod? -->
 
 Zod is a TypeScript-first schema declaration and validation library. I'm using the term 'schema' to broadly refer to any data type, from a simple `string` to a complex nested object.
@@ -27,7 +25,7 @@ Some other great aspects:
 - Works with plain JavaScript too! You don't need to use TypeScript.
 
 {%
- include next-page-link.html
- text='Next: Installation'
- link='../installation'
+    include next-page-link.html
+    text='Next: Installation'
+    link='../installation'
 %}

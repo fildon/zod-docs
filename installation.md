@@ -1,4 +1,10 @@
-# Installation
+---
+title: Installation
+nav_order: 2
+last_modified_date: 2022-02-09
+---
+
+# {{ page.title }}
 
 ## Node
 To install Zod v3:
@@ -27,4 +33,8 @@ npm install zod
 | 2.x | 3.7+ |
 | 1.x | 3.3+ |
 
-[Next: Basic usage](../basic-usage){: .btn.float-right }
+{%
+    include next-page-link.html
+    text='Next: Basic usage'
+    link='../basic-usage'
+%}
