@@ -1,3 +1,9 @@
+---
+# layout: default
+# title: Customization
+nav_order: 1
+---
+
 # <img src='logo.svg' height='25px' /> What is Zod?
 
 Zod is a TypeScript-first schema declaration and validation library. I'm using the term 'schema' to broadly refer to any data type, from a simple `string` to a complex nested object.
