@@ -27,5 +27,5 @@ Some other great aspects:
 {%
     include next-page-link.html
     text='Next: Installation'
-    link='../installation'
+    link='installation'
 %}
