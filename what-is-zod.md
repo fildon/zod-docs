@@ -2,7 +2,7 @@
 title: What is Zod?
 nav_order: 1
 last_modified_date: 2022-02-09
-next-page:
+next_page:
     text: 'Next: Installation'
     link: ../installation
 ---
@@ -26,6 +26,6 @@ Some other great aspects:
 - Works with plain JavaScript too! You don't need to use TypeScript.
 
 <div class='d-flex flex-justify-end'>
-    <a class='btn' href='{{ next-page.link }}'>{{ next-page.text }}</a>
+    <a class='btn' href='{{ next_page.link }}'>{{ next_page.text }}</a>
     <a class='btn' href='../installation'>Next: Installation</a>
 </div>
