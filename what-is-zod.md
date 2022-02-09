@@ -1,7 +1,8 @@
 ---
 title: What is Zod?
 nav_order: 1
-last_modified_date: 2022-02-09T00:00:00.000Z
+last_modified_date: 2022-02-09
+# last_modified_date: 2022-02-09T00:00:00.000Z
 ---
 
 ![logo.png](logo.png)
@@ -22,6 +23,8 @@ Some other great aspects:
 - Functional approach: [parse, don't validate](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/)
 - Works with plain JavaScript too! You don't need to use TypeScript.
 
----
+[Next: Installation](./installation){: .btn }
+
+<!-- ---
 - [Next: Installation](installation.md)
-- [Table of Contents](README.md)
+- [Table of Contents](README.md) -->
