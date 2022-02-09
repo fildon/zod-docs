@@ -1,4 +1,10 @@
-# Type inference
+---
+title: Type inference
+nav_order: 6
+last_modified_date: 2022-02-09
+---
+
+# {{ page.title }}
 
 You can extract the TypeScript type of any schema with `z.infer<typeof mySchema>` .
 
@@ -27,6 +33,8 @@ type output = z.output<typeof stringToNumber>; // number
 type inferred = z.infer<typeof stringToNumber>; // number
 ```
 
----
-- [Next: Errors](errors.md)
-- [Table of Contents](README.md)
+{%
+    include next-page-link.html
+    text='Next: Errors'
+    link='../errors'
+%}

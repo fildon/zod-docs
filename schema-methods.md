@@ -1,4 +1,10 @@
-# Schema methods
+---
+title: Schema methods
+nav_order: 5
+last_modified_date: 2022-02-09
+---
+
+# {{ page.title }}
 
 All Zod schemas contain these methods.
 
@@ -18,9 +24,6 @@ All Zod schemas contain these methods.
 - [.or](#or)
 - [.and](#and)
 
----
-- [Next: Type inference](../type-inference.md)
-- [Table of Contents](README.md)
 ---
 
 ### `.parse`
@@ -414,3 +417,9 @@ z.object({ name: z.string() }).and(z.object({ age: z.number() })); // { name: st
 // equivalent to
 z.intersection(z.object({ name: z.string() }), z.object({ age: z.number() }));
 ```
+
+{%
+    include next-page-link.html
+    text='Next: Type inference'
+    link='../type-inference'
+%}
