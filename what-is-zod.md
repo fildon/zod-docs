@@ -1,8 +1,8 @@
 ---
 title: What is Zod?
 nav_order: 1
-permalink: /
 last_modified_date: 2022-02-09
+permalink: /
 ---
 
 ![logo.png](logo.png)
