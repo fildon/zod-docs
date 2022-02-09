@@ -1,3 +1,5 @@
+# TODO
+
 - [ ] get favicon working
 - [ ] finish ordering nav links
 - [ ] finish adding next links to each page
