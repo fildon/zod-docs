@@ -2,6 +2,9 @@
 title: What is Zod?
 nav_order: 1
 last_modified_date: 2022-02-09
+next-page:
+    text: 'Next: Installation'
+    link: ../installation
 ---
 
 ![logo.png](logo.png)
@@ -22,6 +25,7 @@ Some other great aspects:
 - Functional approach: [parse, don't validate](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/)
 - Works with plain JavaScript too! You don't need to use TypeScript.
 
-<div class='d-flex'>
-    <a class='btn flex-justify-end' href='../installation'>Next: Installation</a>
+<div class='d-flex flex-justify-end'>
+    <a class='btn' href='{{ next-page.link }}'>{{ next-page.text }}</a>
+    <a class='btn' href='../installation'>Next: Installation</a>
 </div>
