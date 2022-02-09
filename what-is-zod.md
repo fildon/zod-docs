@@ -26,6 +26,6 @@ Some other great aspects:
 - Works with plain JavaScript too! You don't need to use TypeScript.
 
 <div class='d-flex flex-justify-end'>
-    <a class='btn' href='{{ next_page.link }}'>{{ next_page.text }}</a>
+    <a class='btn' href='{{ page.next_page.link }}'>{{ page.next_page.text }}</a>
     <a class='btn' href='../installation'>Next: Installation</a>
 </div>
