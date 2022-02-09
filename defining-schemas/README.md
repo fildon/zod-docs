@@ -37,7 +37,11 @@
 - [Function schemas](#function-schemas)
 - [Preprocess](#preprocess)
 
+---
 
+- [Next: Schema methods](schema-methods/README.md)
+- [Table of Contents](README.md)
+---
 
 
 ## Primitives

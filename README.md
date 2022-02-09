@@ -12,7 +12,7 @@
 
 # API
 - [Defining schemas](defining-schemas/README.md)
-- [Schema methods](schema-methods.md)
+- [Schema methods](schema-methods/README.md)
 - [Type inference](type-inference.md)
 - [Errors](errors.md)
 
