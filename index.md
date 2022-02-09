@@ -32,7 +32,8 @@ User.parse({ username: "Ludwig" });
 type User = z.infer<typeof User>;
 // { username: string }
 ```
-
+<!-- 
 ---
 - [Next: Defining schemas](defining-schemas/README.md)
 - [Table of Contents](README.md)
+ -->
