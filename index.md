@@ -1,7 +1,11 @@
+---
+title: Basic usage
+---
+
 <!-- https://pmarsceill.github.io/just-the-docs/ -->
 <!-- https://github.com/pmarsceill/just-the-docs/blob/master/_config.yml -->
 
-# Basic usage
+<!-- # Basic usage -->
 
 Creating a simple string schema
 
