@@ -2,7 +2,6 @@
     <img src="logo.svg" width="100px" align="center" />
     <h1 align="center">Zod</h1>
 </p>
-<p align="center">
 
 # Table of contents
 
