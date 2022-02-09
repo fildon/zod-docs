@@ -1,9 +1,7 @@
 ---
 title: Basic usage
+nav_order: 1
 ---
-
-<!-- https://pmarsceill.github.io/just-the-docs/ -->
-<!-- https://github.com/pmarsceill/just-the-docs/blob/master/_config.yml -->
 
 <!-- # Basic usage -->
 
@@ -43,4 +41,9 @@ type User = z.infer<typeof User>;
 ---
 - [Next: Defining schemas](defining-schemas/README.md)
 - [Table of Contents](README.md)
- -->
+-->
+
+
+
+<!-- https://pmarsceill.github.io/just-the-docs/ -->
+<!-- https://github.com/pmarsceill/just-the-docs/blob/master/_config.yml -->
