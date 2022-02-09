@@ -1,9 +1,4 @@
----
-title: Basic usage
-nav_order: 1
----
-
-<!-- # Basic usage -->
+# Basic usage
 
 Creating a simple string schema
 
@@ -47,3 +42,8 @@ type User = z.infer<typeof User>;
 
 <!-- https://pmarsceill.github.io/just-the-docs/ -->
 <!-- https://github.com/pmarsceill/just-the-docs/blob/master/_config.yml -->
+
+<!-- ---
+title: Basic usage
+nav_order: 1
+--- -->
