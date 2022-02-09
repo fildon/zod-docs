@@ -39,7 +39,7 @@
 
 ---
 
-- [Next: Schema methods](schema-methods/README.md)
+- [Next: Schema methods](../schema-methods/README.md)
 - [Table of Contents](README.md)
 ---
 
