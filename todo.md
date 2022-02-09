@@ -1,1 +1,7 @@
 - [ ] get favicon working
+- [ ] finish ordering nav links
+- [ ] finish adding next links to each page
+- [ ] separate into sub pages
+    - [ ] Defining schemas
+    - [ ] Schema methods
+    - https://pmarsceill.github.io/just-the-docs/docs/navigation-structure/#pages-with-children
