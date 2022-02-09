@@ -7,8 +7,6 @@ last_modified_date: 2022-02-09
 
 ![logo.png](logo.png)
 # {{ page.title }}
-<!-- # What is Zod? -->
-<!-- # <img src='logo.png' height='25px' /> What is Zod? -->
 
 Zod is a TypeScript-first schema declaration and validation library. I'm using the term 'schema' to broadly refer to any data type, from a simple `string` to a complex nested object.
 

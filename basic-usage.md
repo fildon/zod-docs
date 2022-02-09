@@ -1,4 +1,10 @@
-# Basic usage
+---
+title: Basic usage
+nav_order: 2
+last_modified_date: 2022-02-09
+---
+
+# {{ page.title }}
 
 Creating a simple string schema
 
@@ -33,6 +39,8 @@ type User = z.infer<typeof User>;
 // { username: string }
 ```
 
----
-- [Next: Defining schemas](defining-schemas/README.md)
-- [Table of Contents](README.md)
+{%
+    include next-page-link.html
+    text='Next: Defining schemas'
+    link='../defining-schemas'
+%}
