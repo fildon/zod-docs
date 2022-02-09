@@ -10,15 +10,14 @@ npm install zod
 ---
 
 ## TypeScript
-> ⚠️ IMPORTANT: You must enable `strict` mode in your `tsconfig.json`.\
-This is a best practice for all TypeScript projects.
+⚠️ IMPORTANT: You must enable `strict` mode in your `tsconfig.json`. This is a best practice for all TypeScript projects.
 
-```json
+```ts
 // tsconfig.json
 {
-  "compilerOptions": {
-    "strict": true
-  }
+    "compilerOptions": {
+        "strict": true
+    }
 }
 ```
 
