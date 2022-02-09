@@ -19,7 +19,7 @@ All Zod schemas contain these methods.
 - [.and](#and)
 
 ---
-- [Next: Type inference](type-inference.md)
+- [Next: Type inference](../type-inference.md)
 - [Table of Contents](README.md)
 ---
 
