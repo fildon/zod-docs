@@ -1,5 +1,5 @@
 ---
-redirect_from: /what-is-zod
+redirect_from: what-is-zod
 ---
 
 <!-- https://pmarsceill.github.io/just-the-docs/ -->
