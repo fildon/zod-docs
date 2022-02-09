@@ -26,3 +26,7 @@ npm install zod
 | 3.x | 4.1+ |
 | 2.x | 3.7+ |
 | 1.x | 3.3+ |
+
+---
+- [Next: Basic usage](basic-usage.md)
+- [Table of Contents](README.md)
