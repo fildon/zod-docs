@@ -3,8 +3,6 @@
     <h1 align="center">Zod</h1>
 </p>
 
-# Table of contents
-
 - [What is Zod?](what-is-zod)
 - [Installation](installation)
 - [Ecosystem](ecosystem)
