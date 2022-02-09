@@ -1,33 +1,13 @@
 <p align="center">
-  <img src="logo.svg" width="200px" align="center" />
-  <h1 align="center">Zod</h1>
+    <img src="logo.svg" width="100px" align="center" />
+    <h1 align="center">Zod</h1>
 </p>
 <p align="center">
-<a href="https://twitter.com/colinhacks" rel="nofollow"><img src="https://img.shields.io/badge/created%20by-@colinhacks-4BBAAB.svg" alt="Created by Colin McDonnell"></a>
-<a href="https://opensource.org/licenses/MIT" rel="nofollow"><img src="https://img.shields.io/github/license/colinhacks/zod" alt="License"></a>
-<a href="https://www.npmjs.com/package/zod" rel="nofollow"><img src="https://img.shields.io/npm/dw/zod.svg" alt="npm"></a>
-<a href="https://www.npmjs.com/package/zod" rel="nofollow"><img src="https://img.shields.io/github/stars/colinhacks/zod" alt="stars"></a>
-<a href="./src/__tests__" rel="nofollow"><img src="./coverage.svg" alt="coverage"></a>
-
-</p>
-<p align="center">
-by <a href="https://twitter.com/colinhacks">@colinhacks</a>
-</p>
-
-> Hi! Colin here, creator of Zod. I hope you find it easy to use and powerful enough for all your use cases. If you have any issues or suggestions, please [open an issue](https://github.com/colinhacks/zod/issues/new)!
->
-> If you like typesafety, check out my other library [tRPC](https://trpc.io). It works in concert with Zod to provide a seamless way to build end-to-end typesafe APIs without GraphQL or code generation — just TypeScript.
->
-> Colin (AKA [@colinhacks](https://twitter.com/colinhacks))
-
-<br/>
-
-These docs have been translated into [Chinese](./README_ZH.md).
 
 # Table of contents
 
-- [What is Zod](#what-is-zod)
-- [Installation](#installation)
+- [What is Zod](what-is-zod.md)
+- [Installation](installation.md)
 - [Ecosystem](#ecosystem)
 - [Basic usage](#basic-usage)
 - [Defining schemas](#defining-schemas)
@@ -91,125 +71,8 @@ These docs have been translated into [Chinese](./README_ZH.md).
   - [Yup](#yup)
   - [io-ts](#io-ts)
   - [Runtypes](#runtypes)
-- [Changelog](#changelog)
 
-<!-- **Zod 2 is coming! Follow [@colinhacks](https://twitter.com/colinhacks) to stay updated and discuss the future of Zod.** -->
-
-# What is Zod
-
-Zod is a TypeScript-first schema declaration and validation library. I'm using the term "schema" to broadly refer to any data type, from a simple `string` to a complex nested object.
-
-Zod is designed to be as developer-friendly as possible. The goal is to eliminate duplicative type declarations. With Zod, you declare a validator _once_ and Zod will automatically infer the static TypeScript type. It's easy to compose simpler types into complex data structures.
-
-Some other great aspects:
-
-- Zero dependencies
-- Works in Node.js and browsers (including IE 11)
-- Tiny: 8kb minified + zipped
-- Immutable: methods (i.e. `.optional()`) return a new instance
-- Concise, chainable interface
-- Functional approach: [parse, don't validate](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/)
-- Works with plain JavaScript too! You don't need to use TypeScript.
-
-# Sponsorship
-
-Sponsorship at any level is appreciated and encouraged. Zod is maintained by a solo developer ([hi!](https://twitter.com/colinhacks)). For individual developers, consider the [Cup of Coffee tier](https://github.com/sponsors/colinhacks). If you built a paid product using Zod, consider the [Startup tier](https://github.com/sponsors/colinhacks). You can learn more about the tiers at [github.com/sponsors/colinhacks](https://github.com/sponsors/colinhacks).
-
-### Sponsors
-
-<table>
-  <tr>
-   <td align="center">
-      <a href="https://deletype.com/">
-        <img src="https://avatars0.githubusercontent.com/u/15068039?s=200&v=4" width="100px;" alt="" />
-      </a>
-      <br>
-      <b>Deletype</b>
-      <br>
-      <a href="https://deletype.com/">deletype.com/</a>
-    </td>
-  <td align="center">
-      <a href="https://github.com/kevinsimper">
-        <img src="https://avatars1.githubusercontent.com/u/1126497?s=460&v=4" width="100px;" alt="" />
-      </a>
-      <br>
-      <b>Kevin Simper</b>
-      <br>
-      <a href="https://github.com/kevinsimper">@kevinsimper</a>
-    </td>
-    <td align="center">
-      <a href="https://twitter.com/flybayer">
-        <img src="https://avatars2.githubusercontent.com/u/8813276?s=460&u=4ff8beb9a67b173015c4b426a92d89cab960af1b&v=4" width="100px;" alt=""/>
-      </a>
-      <br>
-      <b>Brandon Bayer</b>
-      <br/>
-      <a href="https://twitter.com/flybayer">@flybayer</a>,
-      <span>creator of <a href="https://blitzjs.com">Blitz.js</a></span>
-      <br />
-    </td>
-
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="https://www.bamboocreative.nz/">
-        <img src="https://avatars1.githubusercontent.com/u/41406870?s=460&v=4" width="100px;" alt="" />
-      </a>
-      <br>
-      <b>Bamboo Creative</b>
-      <br>
-      <a href="https://www.bamboocreative.nz/">bamboocreative.nz</a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/jeremyBanks">
-        <img src="https://avatars.githubusercontent.com/u/18020?s=400&u=dba6c1402ae1746a276a5d256e01d68e774a0e9d&v=4" width="100px;" alt="" />
-      </a>
-      <br>
-      <b>Jeremy Banks</b>
-      <br>
-      <a href="https://github.com/jeremyBanks">github.com/jeremyBanks</a>
-    </td>
-     <td align="center">
-      <a href="https://marcatopartners.com/">
-        <img src="https://avatars.githubusercontent.com/u/84106192?s=200&v=4" width="100px;" alt="Marcato Partners" />
-      </a>
-      <br>
-      <b>Marcato Partners</b>
-      <br>
-      <a href="https://marcatopartners.com/">marcatopartners.com</a>
-    </td>
-  </tr>
-</table>
-
-_To get your name + Twitter + website here, sponsor Zod at the [Freelancer](https://github.com/sponsors/colinhacks) or [Consultancy](https://github.com/sponsors/colinhacks) tier._
-
-# Installation
-
-To install Zod v3:
-
-```sh
-npm install zod
-```
-
-⚠️ IMPORTANT: You must enable `strict` mode in your `tsconfig.json`. This is a best practice for all TypeScript projects.
-
-```ts
-// tsconfig.json
-{
-  // ...
-  "compilerOptions": {
-    // ...
-    "strict": true
-  }
-}
-```
-
-#### TypeScript requirements
-
-- Zod 3.x requires TypeScript 4.1+
-- Zod 2.x requires TypeScript 3.7+
-- Zod 1.x requires TypeScript 3.3+
-
+---
 # Ecosystem
 
 There are a growing number of tools that are built atop or support Zod natively! If you've built a tool or library on top of Zod, tell me about it [on Twitter](https://twitter.com/colinhacks) or [start a Discussion](https://github.com/colinhacks/zod/discussions). I'll add it below and tweet it out.
@@ -236,6 +99,9 @@ There are a growing number of tools that are built atop or support Zod natively!
 - [`react-hook-form`](https://github.com/react-hook-form/resolvers#zod): A first-party Zod resolver for React Hook Form
 - [`formik`](https://github.com/robertLichtnow/zod-formik-adapter): A community-maintained Formik adapter for Zod
 
+
+
+---
 # Basic usage
 
 Creating a simple string schema
@@ -271,6 +137,9 @@ type User = z.infer<typeof User>;
 // { username: string }
 ```
 
+
+
+---
 # Defining schemas
 
 ## Primitives
