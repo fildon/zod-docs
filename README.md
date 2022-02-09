@@ -1,6 +1,6 @@
 <p align="center">
     <img src="logo.svg" width="100px" align="center" />
-    <h1 align="center">Zod</h1>
+    <h1 align="center">Zod Docs</h1>
 </p>
 
 # Intro
@@ -17,5 +17,6 @@
 - [Errors](errors.md)
 
 # More Info
+- [Zod Repo](https://github.com/colinhacks/zod)
 - [Ecosystem](ecosystem.md)
 - [Comparison](comparison.md)
