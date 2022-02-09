@@ -17,6 +17,6 @@
 - [Errors](errors.md)
 
 # More Info
-- [Zod Repo](https://github.com/colinhacks/zod)
 - [Ecosystem](ecosystem.md)
 - [Comparison](comparison.md)
+- [Zod Repo](https://github.com/colinhacks/zod)

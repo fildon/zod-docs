@@ -26,3 +26,7 @@ type output = z.output<typeof stringToNumber>; // number
 // equivalent to z.output!
 type inferred = z.infer<typeof stringToNumber>; // number
 ```
+
+---
+- [Next: Errors](errors.md)
+- [Table of Contents](README.md)

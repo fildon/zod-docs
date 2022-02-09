@@ -35,3 +35,7 @@ data.error.format();
 ```
 
 For detailed information about the possible error codes and how to customize error messages, check out the dedicated error handling guide: [ERROR_HANDLING.md](ERROR_HANDLING.md)
+
+---
+- [Next: Ecosystem](ecosystem.md)
+- [Table of Contents](README.md)
