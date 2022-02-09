@@ -1,6 +1,6 @@
 ---
 # title: Home
-redirect_to: /what-is-zod
+redirect_from: /what-is-zod
 # redirect_to: http://www.github.com
 ---
 
