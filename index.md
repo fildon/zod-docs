@@ -1,7 +1,5 @@
 ---
-# title: Home
 redirect_from: /what-is-zod
-# redirect_to: http://www.github.com
 ---
 
 <!-- https://pmarsceill.github.io/just-the-docs/ -->
