@@ -1,7 +1,7 @@
 ---
 title: What is Zod?
 nav_order: 1
-last_modified_date: frontMatter.setLastModifiedDate
+last_modified_date: 2022-02-09T00:00:00.000Z
 ---
 
 ![logo.png](logo.png)
