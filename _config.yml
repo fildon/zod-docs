@@ -1,2 +1,11 @@
-# theme: jekyll-theme-cayman
+title: Zod Docs
 remote_theme: pmarsceill/just-the-docs
+color_scheme: dark
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Footer last edited timestamp
+last_edit_timestamp: true
+last_edit_time_format: "%b %e %Y at %I:%M %p"
