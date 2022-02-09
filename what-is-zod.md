@@ -25,7 +25,4 @@ Some other great aspects:
 - Functional approach: [parse, don't validate](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/)
 - Works with plain JavaScript too! You don't need to use TypeScript.
 
-<div class='d-flex flex-justify-end'>
-    <a class='btn' href='{{ page.next_page.link }}'>{{ page.next_page.text }}</a>
-    <a class='btn' href='../installation'>Next: Installation</a>
-</div>
+{% include next-page-link.html data=page.next_page %}
