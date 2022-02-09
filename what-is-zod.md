@@ -23,6 +23,5 @@ Some other great aspects:
 - Works with plain JavaScript too! You don't need to use TypeScript.
 
 <div class='d-flex'>
-
-[Next: Installation](../installation){: .btn.flex-justify-end }
+    <a class='btn flex-justify-end' href='../installation'>Next: Installation</a>
 </div>
