@@ -29,11 +29,7 @@ Some other great aspects:
 - Works with plain JavaScript too! You don't need to use TypeScript.
 
 ```
-{{ page.prev }}
-```
-
-```
-{{ page.next }}
+{{ page | jsonify }}
 ```
 
 {%
