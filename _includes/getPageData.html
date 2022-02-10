@@ -1,5 +1,5 @@
 <script>
-    console.log( `{{ page }}` )
+    console.log( JSON.parse( `{{ page | jsonify }}` ) )
 </script>
 
 <!-- <hr> -->
