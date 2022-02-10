@@ -3,6 +3,12 @@ title: What is Zod?
 nav_order: 1
 last_modified_date: 2022-02-09
 permalink: /
+prev:
+    rel_url: ../todo
+    title: TODOs
+next:
+    rel_url: installation
+    title: Installation
 ---
 
 ![logo.png](logo.png)
@@ -22,8 +28,21 @@ Some other great aspects:
 - Functional approach: [parse, don't validate](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/)
 - Works with plain JavaScript too! You don't need to use TypeScript.
 
+```
+{{ page.prev }}
+```
+
+```
+{{ page.next }}
+```
+
 {%
+    include next-prev-page-links.html
+    prev=page.prev
+    next=page.next
+%}
+<!-- {%
     include next-page-link.html
     text='Next: Installation'
     link='installation'
-%}
+%} -->
