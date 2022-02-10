@@ -1,7 +1,9 @@
 <hr>
 ```
 {% for data in page %}
-{{ data }}
+{% if data[0] != 'content' %}
+{{ data[0] }}: {{ data[1] }}
+{% endif %}
 {% endfor %}
 <!-- {{ page | jsonify }} -->
 ```
