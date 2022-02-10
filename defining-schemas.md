@@ -1,7 +1,6 @@
 ---
 title: Defining schemas
 nav_order: 4
-last_modified_date: 2022-02-09
 ---
 
 # {{ page.title }}
@@ -1015,7 +1014,7 @@ const castToString = z.preprocess((val) => String(val), z.string());
 This returns a `ZodEffects` instance. `ZodEffects` is a wrapper class that contains all logic pertaining to preprocessing, refinements, and transforms.
 
 {%
-    include next-page-link.html
+    include next-page-link.liquid
     text='Next: Schema methods'
     link='../schema-methods'
 %}
