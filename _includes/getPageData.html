@@ -2,7 +2,17 @@
 ###### Page Data:
 
 ```yaml
-{% for data in page %}{%
-unless data[0] == 'content' %}{{ data[0] }}: {{ data[1]}}{% endunless %}
-{% endfor %}
+{%
+for data in page
+%}{%
+if forloop.first == true
+%}first{%
+endif
+%}{%
+unless data[0] == 'content'
+%}{{ data[0] }}: {{ data[1]}}{%
+endunless
+%}{%
+endfor
+%}
 ```
