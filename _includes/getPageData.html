@@ -1,5 +1,6 @@
 <script>
-    console.log( JSON.parse( '{{ page | jsonify | escape }}' ) )
+    console.log( {{ page | json }} )
+    // console.log( JSON.parse( '{{ page | jsonify | escape }}' ) )
 </script>
 
 <!-- <hr> -->
