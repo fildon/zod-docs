@@ -33,6 +33,10 @@ npm install zod
 | 2.x | 3.7+ |
 | 1.x | 3.3+ |
 
+```
+layout: {{ page.layout }}
+```
+
 {%
     include next-page-link.html
     text='Next: Basic usage'

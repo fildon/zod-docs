@@ -39,6 +39,10 @@ type User = z.infer<typeof User>;
 // { username: string }
 ```
 
+```
+layout: {{ page.layout }}
+```
+
 {%
     include next-page-link.html
     text='Next: Defining schemas'
