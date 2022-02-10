@@ -28,9 +28,7 @@ Some other great aspects:
 - Functional approach: [parse, don't validate](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/)
 - Works with plain JavaScript too! You don't need to use TypeScript.
 
-```
-{{ page | jsonify }}
-```
+<pre>{{ page | jsonify }}</pre>
 
 {%
     include next-prev-page-links.html
