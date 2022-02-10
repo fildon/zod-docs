@@ -1,0 +1,20 @@
+<script style='display: none;'>
+    class PageLink {
+        /** @type {string} */ rel_url
+        /** @type {string} */ title
+    }
+
+    class IncludeParams {
+        /** @type {PageLink} */ previous
+        /** @type {PageLink} */ next
+    }
+</script>
+
+<div class='d-flex flex-justify-between'>
+    {% if include.previous %}
+        <a class='btn' href='{{ include.previous.rel_url }}'>Prev: {{ include.previous.title }}</a>
+    {% endif %}
+    {% if include.next %}
+        <a class='btn' href='{{ include.next.rel_url }}'>Next: {{ include.next.title }}</a>
+    {% endif %}
+</div>

@@ -1,8 +1,14 @@
 ---
 title: Basic usage
 nav_order: 3
-last_modified_date: 2022-02-09
+previous:
+    title: Installation
+    rel_url: ../installation
+next:
+    title: Defining schemas
+    rel_url: ../defining-schemas
 ---
+{% include getPageData.liquid %}
 
 # {{ page.title }}
 
@@ -39,10 +45,4 @@ type User = z.infer<typeof User>;
 // { username: string }
 ```
 
-{%
-    include next-page-link.html
-    text='Next: Defining schemas'
-    link='../defining-schemas'
-%}
-
-{% include getPageData.liquid %}
+{% include next-prev-page-links.liquid previous=page.previous next=page.next %}

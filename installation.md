@@ -1,8 +1,7 @@
 ---
 title: Installation
 nav_order: 2
-last_modified_date: 2022-02-09
-prev:
+previous:
     title: What is Zod?
     rel_url: ../
 next:
@@ -39,8 +38,4 @@ npm install zod
 | 2.x | 3.7+ |
 | 1.x | 3.3+ |
 
-{%
-    include next-prev-page-links.html
-    prev=page.prev
-    next=page.next
-%}
+{% include next-prev-page-links.liquid previous=page.previous next=page.next %}
