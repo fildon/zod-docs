@@ -45,4 +45,5 @@ type User = z.infer<typeof User>;
     link='../defining-schemas'
 %}
 
-{% include getPageData.html %}
+{% include getPageData.liquid %}
+<!-- {% include getPageData.html %} -->
