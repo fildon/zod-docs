@@ -6,7 +6,7 @@ last_modified_date: 2022-02-09
 
 # {{ page.title }}
 
-Creating a simple string schema
+## Creating a simple string schema
 
 ```ts
 import { z } from "zod";
@@ -23,7 +23,7 @@ mySchema.safeParse("tuna"); // => { success: true; data: "tuna" }
 mySchema.safeParse(12); // => { success: false; error: ZodError }
 ```
 
-Creating an object schema
+## Creating an object schema
 
 ```ts
 import { z } from "zod";
@@ -39,12 +39,11 @@ type User = z.infer<typeof User>;
 // { username: string }
 ```
 
-```
-layout: {{ page.layout }}
-```
-
 {%
     include next-page-link.html
     text='Next: Defining schemas'
     link='../defining-schemas'
 %}
+
+{% include getPageData.html %}
+{% include getPageData.md %}
