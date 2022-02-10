@@ -46,4 +46,3 @@ type User = z.infer<typeof User>;
 %}
 
 {% include getPageData.liquid %}
-<!-- {% include getPageData.html %} -->
