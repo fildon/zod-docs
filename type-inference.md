@@ -1,7 +1,6 @@
 ---
 title: Type inference
 nav_order: 6
-last_modified_date: 2022-02-09
 ---
 
 # {{ page.title }}
@@ -34,7 +33,7 @@ type inferred = z.infer<typeof stringToNumber>; // number
 ```
 
 {%
-    include next-page-link.html
+    include next-page-link.liquid
     text='Next: Errors'
     link='../errors'
 %}

@@ -1,7 +1,6 @@
 ---
 title: Schema methods
 nav_order: 5
-last_modified_date: 2022-02-09
 ---
 
 # {{ page.title }}
@@ -419,7 +418,7 @@ z.intersection(z.object({ name: z.string() }), z.object({ age: z.number() }));
 ```
 
 {%
-    include next-page-link.html
+    include next-page-link.liquid
     text='Next: Type inference'
     link='../type-inference'
 %}
