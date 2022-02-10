@@ -2,9 +2,9 @@
 title: What is Zod?
 nav_order: 1
 last_modified_date: 2022-02-09
-permalink: /
+# permalink: /
 prev:
-    rel_url: ../todo
+    rel_url: todo
     title: TODOs
 next:
     rel_url: installation
