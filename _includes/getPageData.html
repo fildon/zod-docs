@@ -1,6 +1,13 @@
+{% capture pageData %}
+{% for data in page %}
+{% if data[0] != 'content' %}{% continue %}
+{{ data[0] }}: {{ data[1]}}
+{% endif %}
+{% endfor %}
+{% endcapture %}
+
 <hr>
+###### Page Data:
 ```
-{% for data in page %}{% if data[0] != 'content' %}
-{{ data[0] }}: {{ data[1]
-}}{% endif %}{% endfor %}
+{{ pageData | replace: "\n\n", "\n" }}
 ```
