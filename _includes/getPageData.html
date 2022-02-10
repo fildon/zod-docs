@@ -1,4 +1,7 @@
 <hr>
 ```
-{{ page | jsonify }}
+{% for data in page %}
+{{ data }}
+{% endfor %}
+<!-- {{ page | jsonify }} -->
 ```
