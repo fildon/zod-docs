@@ -1,6 +1,13 @@
 ---
 title: Schema methods
 nav_order: 5
+permalink: /defining-schemas
+previous:
+    title: Defining schemas
+    rel_url: ../defining-schemas
+next:
+    title: Type inference
+    rel_url: ../type-inference
 ---
 
 # {{ page.title }}
@@ -417,8 +424,4 @@ z.object({ name: z.string() }).and(z.object({ age: z.number() })); // { name: st
 z.intersection(z.object({ name: z.string() }), z.object({ age: z.number() }));
 ```
 
-{%
-    include next-page-link.liquid
-    text='Next: Type inference'
-    link='../type-inference'
-%}
+{% include next-prev-page-links.liquid previous=page.previous next=page.next %}

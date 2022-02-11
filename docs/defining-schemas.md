@@ -1,6 +1,13 @@
 ---
 title: Defining schemas
 nav_order: 4
+permalink: /defining-schemas
+previous:
+    title: Basic usage
+    rel_url: ../basic-usage
+next:
+    title: Schema methods
+    rel_url: ../schema-methods
 ---
 
 # {{ page.title }}
@@ -1013,8 +1020,4 @@ const castToString = z.preprocess((val) => String(val), z.string());
 
 This returns a `ZodEffects` instance. `ZodEffects` is a wrapper class that contains all logic pertaining to preprocessing, refinements, and transforms.
 
-{%
-    include next-page-link.liquid
-    text='Next: Schema methods'
-    link='../schema-methods'
-%}
+{% include next-prev-page-links.liquid previous=page.previous next=page.next %}
