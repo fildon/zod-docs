@@ -2,7 +2,7 @@
 
 - [x] todo list could be made (good and easy thing to start)
 - [x] Copy docs from readme on github
-- [ ] figure out a way to keep docs in sync with [colinhacks/zod]()https://github.com/colinhacks/zod
+- [ ] figure out a way to keep docs in sync with [colinhacks/zod](https://github.com/colinhacks/zod)
 
 - [x] get favicon working
 - [ ] set up free domain: [js.org](https://js.org/)
