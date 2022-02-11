@@ -11,10 +11,14 @@
 </script>
 
 <div class='d-flex flex-justify-between'>
-    {% if include.previous %}
+    <div>
+        {% if include.previous %}
         <a class='btn' href='{{ include.previous.rel_url }}'>Prev: {{ include.previous.title }}</a>
-    {% endif %}
-    {% if include.next %}
+        {% endif %}
+    </div>
+    <div>
+        {% if include.next %}
         <a class='btn' href='{{ include.next.rel_url }}'>Next: {{ include.next.title }}</a>
-    {% endif %}
+        {% endif %}
+    </div>
 </div>

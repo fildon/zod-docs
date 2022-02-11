@@ -1,12 +1,17 @@
 <hr>
 ###### Page Data:
-<!-- {{ site.data.nav-pages | jsonify }} -->
+{{ site.data.nav-pages | jsonify }}
+<hr>
+{{ site.data.nav-pages | pretty_json }}
+<hr>
+{{ site.data.nav-pages | neat_json }}
+<hr>
 
-{% for page in site.data.nav-pages %}
-{{ page[0] }}: {{ page[1] | pretty_json }}
+<!-- {% for page in site.data.nav-pages %} -->
+<!-- {{ page[0] }}: {{ page[1] | pretty_json }} -->
 <!-- {{ page[0] }}: {{ page[1] | neat_json }} -->
 <!-- {{ page[0] }}: {{ page[1] | jsonify }} -->
-{% endfor %}
+<!-- {% endfor %} -->
 
 <!--
 ```yaml
