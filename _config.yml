@@ -11,6 +11,14 @@ back_to_top_text: "Back to top"
 last_edit_timestamp: true
 last_edit_time_format: "%b %e %Y"
 
+defaults:
+    - scope:
+          path: "docs/*"
+      values:
+          permalink: /:basename
+          #   permalink: /:basename/
+          #   permalink: :path/../:basename
+#
 # plugins:
 
 # info:
