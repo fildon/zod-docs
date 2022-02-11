@@ -5,8 +5,7 @@
     - [ ] figure out a way to keep it in sync
 
 - [x] get favicon working
-- [ ] set up free domain
-  - https://js.org/
+- [ ] set up free domain: https://js.org/
 - [ ] move all front matter from docs to pages config file
 - [ ] finish ordering nav links
 - [ ] finish adding next links to each page
@@ -21,10 +20,10 @@
 - [ ] Fetching data from external source and validating the data
 - [ ] Custom Error Handling
 - [ ] UI Components: https://github.com/colinhacks/zod/discussions/877
-    - [ ] Svelte
-    - [ ] React - In progress
-    - [ ] Angular
-    - [ ] Vue
+    <!-- - [ ] Svelte -->
+    <!-- - [ ] React - In progress -->
+    <!-- - [ ] Angular -->
+    <!-- - [ ] Vue -->
 - [ ] Dynamic Schemas. Is this even possible?
     - https://github.com/colinhacks/zod/discussions/908
 
