@@ -1,10 +1,14 @@
 <hr>
 ###### Page Data:
-{{ site.data.nav-pages | jsonify }}
+<!-- {{ site.data.nav-pages | jsonify }} -->
 
 {% for page in site.data.nav-pages %}
 {{ page[0] }}: {{ page[1] | jsonify }}
 {% endfor %}
+
+{% yaml %}
+test: test
+{% endyaml %}
 
 <!--
 ```yaml
