@@ -15,7 +15,8 @@ defaults:
     - scope:
           path: "docs/*"
       values:
-          permalink: /:basename
+          permalink: :basename
+          #   permalink: /:basename
 #
 #
 # plugins:
