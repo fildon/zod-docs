@@ -4,10 +4,10 @@ nav_order: 4
 permalink: /defining-schemas
 previous:
     title: Basic usage
-    rel_url: ../basic-usage
+    rel_url: ./basic-usage
 next:
     title: Schema methods
-    rel_url: ../schema-methods
+    rel_url: ./schema-methods
 ---
 
 # {{ page.title }}

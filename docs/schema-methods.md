@@ -4,10 +4,10 @@ nav_order: 5
 permalink: /defining-schemas
 previous:
     title: Defining schemas
-    rel_url: ../defining-schemas
+    rel_url: ./defining-schemas
 next:
     title: Type inference
-    rel_url: ../type-inference
+    rel_url: ./type-inference
 ---
 
 # {{ page.title }}
