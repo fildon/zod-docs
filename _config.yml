@@ -5,7 +5,7 @@ permalink: pretty
 
 # Back to top link
 back_to_top: true
-back_to_top_text: "Back to top"
+back_to_top_text: Back to top
 
 # Footer last edited timestamp
 last_edit_timestamp: true
@@ -13,10 +13,9 @@ last_edit_time_format: "%b %e %Y"
 
 defaults:
     - scope:
-          path: "docs/*"
+          path: docs/*
       values:
           permalink: :basename
-          #   permalink: /:basename
 #
 #
 # plugins:
