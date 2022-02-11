@@ -4,10 +4,10 @@ nav_order: 2
 permalink: /installation
 previous:
     title: What is Zod?
-    rel_url: /:path
+    rel_url: :path/../
 next:
     title: What is Zod?
-    rel_url: :path/../
+    rel_url: ../
     # title: Basic usage
     # rel_url: ../basic-usage
 ---
