@@ -1,4 +1,16 @@
-# Errors
+---
+title: Errors
+nav_order: 7
+permalink: /errors
+previous:
+    title: Type inference
+    rel_url: ./type-inference
+next:
+    title: Ecosystem
+    rel_url: ./ecosystem
+---
+
+# {{ page.title }}
 
 Zod provides a subclass of Error called `ZodError`. ZodErrors contain an `issues` array containing detailed information about the validation problems.
 
@@ -37,5 +49,4 @@ data.error.format();
 For detailed information about the possible error codes and how to customize error messages, check out the dedicated error handling guide: [ERROR_HANDLING.md](ERROR_HANDLING.md)
 
 ---
-- [Next: Ecosystem](ecosystem.md)
-- [Table of Contents](README.md)
+{% include next-prev-page-links.liquid previous=page.previous next=page.next %}

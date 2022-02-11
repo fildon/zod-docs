@@ -45,4 +45,5 @@ type User = z.infer<typeof User>;
 // { username: string }
 ```
 
+---
 {% include next-prev-page-links.liquid previous=page.previous next=page.next %}

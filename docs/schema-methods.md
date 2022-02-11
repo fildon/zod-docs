@@ -1,7 +1,7 @@
 ---
 title: Schema methods
 nav_order: 5
-permalink: /defining-schemas
+permalink: /schema-methods
 previous:
     title: Defining schemas
     rel_url: ./defining-schemas
@@ -424,4 +424,5 @@ z.object({ name: z.string() }).and(z.object({ age: z.number() })); // { name: st
 z.intersection(z.object({ name: z.string() }), z.object({ age: z.number() }));
 ```
 
+---
 {% include next-prev-page-links.liquid previous=page.previous next=page.next %}
