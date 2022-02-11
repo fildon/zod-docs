@@ -3,5 +3,5 @@
     <h1 align="center">Zod Docs</h1>
 </p>
 
-- [Zod Docs Site](https://zodorg.github.io/ZodDocs)
+- [Zod Docs Site](https://zodorg.github.io/zod-docs/)
 - [Zod Core Repo](https://github.com/colinhacks/zod)
