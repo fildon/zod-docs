@@ -1,4 +1,0 @@
-{
-    "git.postCommitCommand": "sync",
-    "git.enableSmartCommit": true
-}
