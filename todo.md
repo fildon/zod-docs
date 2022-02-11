@@ -12,3 +12,6 @@
 [pages-with-children](https://pmarsceill.github.io/just-the-docs/docs/navigation-structure/#pages-with-children)
 - [ ] Defining schemas
 - [ ] Schema methods
+
+
+{% include test.liquid %}
