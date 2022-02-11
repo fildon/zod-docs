@@ -14,4 +14,4 @@
 - [ ] Schema methods
 
 
-{% include test.liquid %}
+<!-- {% include test.liquid %} -->

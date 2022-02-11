@@ -1,6 +1,7 @@
 ---
 title: Installation
 nav_order: 2
+permalink: /installation
 previous:
     title: What is Zod?
     rel_url: ../
