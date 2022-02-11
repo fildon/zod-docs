@@ -3,7 +3,8 @@
 <!-- {{ site.data.nav-pages | jsonify }} -->
 
 {% for page in site.data.nav-pages %}
-{{ page[0] }}: {{ page[1] | neat_json }}
+{{ page[0] }}: {{ page[1] | pretty_json }}
+<!-- {{ page[0] }}: {{ page[1] | neat_json }} -->
 <!-- {{ page[0] }}: {{ page[1] | jsonify }} -->
 {% endfor %}
 
