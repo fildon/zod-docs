@@ -1,0 +1,10 @@
+{% if site.logo %}<div class="site-logo"></div>{% endif %}
+{{ site.title }}
+
+{% comment %}
+{% if site.logo %}
+  <div class="site-logo"></div>
+{% else %}
+  {{ site.title }}
+{% endif %}
+{% endcomment %}
