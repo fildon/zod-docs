@@ -1,7 +1,7 @@
 ---
 title: Defining schemas
 nav_order: 4
-permalink: /defining-schemas
+# permalink: /defining-schemas
 previous:
     title: Basic usage
     rel_url: ./basic-usage

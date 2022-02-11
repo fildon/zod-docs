@@ -1,7 +1,7 @@
 ---
 title: Schema methods
 nav_order: 5
-permalink: /schema-methods
+# permalink: /schema-methods
 previous:
     title: Defining schemas
     rel_url: ./defining-schemas

@@ -1,7 +1,7 @@
 ---
 title: Errors
 nav_order: 7
-permalink: /errors
+# permalink: /errors
 previous:
     title: Type inference
     rel_url: ./type-inference

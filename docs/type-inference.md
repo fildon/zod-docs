@@ -1,7 +1,7 @@
 ---
 title: Type inference
 nav_order: 6
-permalink: /type-inference
+# permalink: /type-inference
 previous:
     title: Schema methods
     rel_url: ./schema-methods

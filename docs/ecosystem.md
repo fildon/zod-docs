@@ -1,7 +1,7 @@
 ---
 title: Ecosystem
 nav_order: 8
-permalink: /ecosystem
+# permalink: /ecosystem
 previous:
     title: Errors
     rel_url: ./errors

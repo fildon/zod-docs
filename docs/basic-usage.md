@@ -1,7 +1,7 @@
 ---
 title: Basic usage
 nav_order: 3
-permalink: /basic-usage
+# permalink: /basic-usage
 previous:
     title: Installation
     rel_url: ./installation

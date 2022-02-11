@@ -1,7 +1,7 @@
 ---
 title: Comparison
 nav_order: 9
-permalink: /comparison
+# permalink: /comparison
 previous:
     title: Ecosystem
     rel_url: ./ecosystem
