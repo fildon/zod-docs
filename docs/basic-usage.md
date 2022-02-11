@@ -8,7 +8,6 @@ next:
     title: Defining schemas
     rel_url: ../defining-schemas
 ---
-{% include getPageData.liquid %}
 
 # {{ page.title }}
 

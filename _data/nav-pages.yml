@@ -1,0 +1,30 @@
+what-is-zod:
+    title: What is Zod?
+    permalink: /
+    logo:
+        alt-text: logo
+        path: logo.png
+
+installation:
+    title: Installation
+
+basic-usage:
+    title: Basic usage
+
+defining-schemas:
+    title: Defining schemas
+
+schema-methods:
+    title: Schema methods
+
+type-inference:
+    title: Type inference
+
+errors:
+    title: Errors
+
+ecosystem:
+    title: Ecosystem
+
+comparison:
+    title: Comparison

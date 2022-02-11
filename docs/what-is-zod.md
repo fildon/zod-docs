@@ -7,6 +7,8 @@ next:
     rel_url: installation
 ---
 
+{% include test.liquid %}
+
 ![logo.png](logo.png)
 # {{ page.title }}
 

@@ -3,6 +3,7 @@
 - [x] get favicon working
 - [ ] set up free domain
   - https://js.org/
+- [ ] move all front matter from docs to pages config file
 - [ ] finish ordering nav links
 - [ ] finish adding next links to each page
 - [ ] figure out how to make next links auto generate
