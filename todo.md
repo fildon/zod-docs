@@ -14,4 +14,6 @@
 - [ ] Schema methods
 
 
-<!-- {% include test.liquid %} -->
+{% comment %}
+{% include test.liquid %}
+{% endcomment %}
