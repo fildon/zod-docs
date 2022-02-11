@@ -1,6 +1,8 @@
 # TODO
 
-- [ ] get favicon working
+- [x] get favicon working
+- [ ] set up free domain
+  - https://js.org/
 - [ ] finish ordering nav links
 - [ ] finish adding next links to each page
 - [ ] figure out how to make next links auto generate
