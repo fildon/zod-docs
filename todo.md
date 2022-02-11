@@ -2,10 +2,10 @@
 
 - [x] todo list could be made (good and easy thing to start)
 - [x] Copy docs from readme on github
-    - [ ] figure out a way to keep it in sync
+- [ ] figure out a way to keep docs in sync with [colinhacks/zod]()https://github.com/colinhacks/zod
 
 - [x] get favicon working
-- [ ] set up free domain: https://js.org/
+- [ ] set up free domain: [js.org](https://js.org/)
 - [ ] move all front matter from docs to pages config file
 - [ ] finish ordering nav links
 - [ ] finish adding next links to each page
@@ -24,8 +24,7 @@
     <!-- - [ ] React - In progress -->
     <!-- - [ ] Angular -->
     <!-- - [ ] Vue -->
-- [ ] Dynamic Schemas. Is this even possible?
-    - https://github.com/colinhacks/zod/discussions/908
+- [ ] Dynamic Schemas. Is this even possible? [https://github.com/colinhacks/zod/discussions/908](https://github.com/colinhacks/zod/discussions/908)
 
 ## Common Mistakes
 - [ ] A lot of people expect that the input of a schema should accept anything that be coerced into it, like `z.date` should be able to accept a `date string`, or `z.number` accepting a `string`, etc.
