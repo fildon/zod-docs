@@ -3,7 +3,7 @@
 {{ site.data.nav-pages | jsonify }}
 
 {% for page in site.data.nav-pages %}
-{{ page | jsonify }}
+{{ page[0] }}: {{ page[1] | jsonify }}
 {% endfor %}
 
 <!--
