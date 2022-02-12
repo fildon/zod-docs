@@ -7,7 +7,7 @@ next:
     rel_url: installation
 ---
 
-![logo.png](logo.png)
+![logo]({{ site.logo }})
 # {{ page.title }}
 
 Zod is a TypeScript-first schema declaration and validation library. I'm using the term 'schema' to broadly refer to any data type, from a simple `string` to a complex nested object.

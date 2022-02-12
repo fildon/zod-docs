@@ -3,7 +3,8 @@ what-is-zod:
     permalink: /
     logo:
         alt-text: logo
-        path: logo.png
+        path: /assets/images/logo.png
+        # path: site.logo
 
 installation:
     title: Installation
