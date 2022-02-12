@@ -1,8 +1,8 @@
 title: Zod Docs
 logo: /assets/images/logo.png
 
-theme: just-the-docs
 remote_theme: pmarsceill/just-the-docs
+# theme: just-the-docs
 permalink: pretty
 
 # Back to top link
@@ -28,6 +28,13 @@ defaults:
 #     - page
 #     - post?
 
+#
+#
+#
+#
+#
+#
+#
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
