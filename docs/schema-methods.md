@@ -424,5 +424,4 @@ z.object({ name: z.string() }).and(z.object({ age: z.number() })); // { name: st
 z.intersection(z.object({ name: z.string() }), z.object({ age: z.number() }));
 ```
 
----
 {% include next-prev-page-links.liquid previous=page.previous next=page.next %}

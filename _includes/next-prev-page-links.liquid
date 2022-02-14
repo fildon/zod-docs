@@ -1,15 +1,4 @@
-<script style='display: none;'>
-    class PageLink {
-        /** @type {string} */ rel_url
-        /** @type {string} */ title
-    }
-
-    class IncludeParams {
-        /** @type {PageLink} */ previous
-        /** @type {PageLink} */ next
-    }
-</script>
-
+---
 <div class='d-flex flex-justify-between'>
     <div>
         {% if include.previous %}
@@ -22,3 +11,15 @@
         {% endif %}
     </div>
 </div>
+
+<script style='display: none;'>
+    class PageLink {
+        /** @type {string} */ rel_url
+        /** @type {string} */ title
+    }
+
+    class IncludeParams {
+        /** @type {PageLink} */ previous
+        /** @type {PageLink} */ next
+    }
+</script>

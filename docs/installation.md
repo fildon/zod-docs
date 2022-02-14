@@ -13,11 +13,7 @@ next:
 # {{ page.title }}
 {: .no_toc }
 
----
-- Table of Contents
-{:toc}
----
-
+{% include table-of-contents.liquid %}
 
 ## Node
 To install Zod v3:
@@ -46,5 +42,4 @@ npm install zod
 | 2.x | 3.7+ |
 | 1.x | 3.3+ |
 
----
 {% include next-prev-page-links.liquid previous=page.previous next=page.next %}

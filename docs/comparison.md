@@ -162,5 +162,4 @@ Ow is focused on function input validation. It's a library that makes it easy to
 
 If you want to validate function inputs, use function schemas in Zod! It's a much simpler approach that lets you reuse a function type declaration without repeating yourself (namely, copy-pasting a bunch of ow assertions at the beginning of every function). Also Zod lets you validate your return types as well, so you can be sure there won't be any unexpected data passed downstream.
 
----
 {% include next-prev-page-links.liquid previous=page.previous next=page.next %}

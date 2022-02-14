@@ -24,5 +24,4 @@ Some other great aspects:
 - Functional approach: [parse, don't validate](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/)
 - Works with plain JavaScript too! You don't need to use TypeScript.
 
----
 {% include next-prev-page-links.liquid previous=page.previous next=page.next %}

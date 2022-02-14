@@ -39,5 +39,4 @@ type output = z.output<typeof stringToNumber>; // number
 type inferred = z.infer<typeof stringToNumber>; // number
 ```
 
----
 {% include next-prev-page-links.liquid previous=page.previous next=page.next %}
