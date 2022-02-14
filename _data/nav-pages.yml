@@ -4,7 +4,7 @@ what-is-zod:
     logo:
         alt-text: logo
         path: /assets/images/logo.png
-        # path: site.logo
+        # path: { { site.logo } } # TODO
 
 installation:
     title: Installation
