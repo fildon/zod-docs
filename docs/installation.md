@@ -10,18 +10,18 @@ next:
     rel_url: ./basic-usage
 ---
 
-# Navigation Structure
-{: .no_toc }
-
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
 # {{ page.title }}
 
-## Node
+---
+
+- TOC
+{:toc}
+
+- TOC {:toc}
+
+---
+
+# Node
 To install Zod v3:
 
 ```sh
@@ -30,7 +30,7 @@ npm install zod
 
 ---
 
-## TypeScript
+# TypeScript
 ⚠️ IMPORTANT: You must enable `strict` mode in your `tsconfig.json`. This is a best practice for all TypeScript projects.
 
 ```ts
