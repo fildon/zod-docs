@@ -1,31 +1,25 @@
-what-is-zod:
-    title: What is Zod?
-    permalink: /
-    logo:
-        alt-text: logo
-        path: /assets/images/logo.png
-        # path: { { site.logo } } # TODO
+- title: What is Zod?
+  permalink: /
 
-installation:
-    title: Installation
+- title: Installation
 
-basic-usage:
-    title: Basic usage
+- title: Basic usage
 
-defining-schemas:
-    title: Defining schemas
+- title: Defining schemas
+  children:
+      - title: Primitives
+      - title: Literals
+      - title: Strings
+      - title: Numbers
+      - title: Booleans
+      - title: Dates
 
-schema-methods:
-    title: Schema methods
+- title: Schema methods
 
-type-inference:
-    title: Type inference
+- title: Type inference
 
-errors:
-    title: Errors
+- title: Errors
 
-ecosystem:
-    title: Ecosystem
+- title: Ecosystem
 
-comparison:
-    title: Comparison
+- title: Comparison

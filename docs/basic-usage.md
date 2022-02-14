@@ -1,7 +1,7 @@
 ---
+layout: doc-page
 title: Basic usage
 nav_order: 3
-# permalink: /basic-usage
 previous:
     title: Installation
     rel_url: ./installation
@@ -9,8 +9,6 @@ next:
     title: Defining schemas
     rel_url: ./defining-schemas
 ---
-
-# {{ page.title }}
 
 ## Creating a simple string schema
 
@@ -44,5 +42,3 @@ User.parse({ username: "Ludwig" });
 type User = z.infer<typeof User>;
 // { username: string }
 ```
-
-{% include next-prev-page-links.liquid previous=page.previous next=page.next %}

@@ -153,6 +153,9 @@ layout: table_wrappers
           </ul>
         {% endif %}
 
+        <hr>
+        {% include next-prev-page-links.liquid previous=page.previous next=page.next %}
+
         {% capture footer_custom %}
           {%- include footer_custom.html -%}
         {% endcapture %}

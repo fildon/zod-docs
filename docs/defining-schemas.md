@@ -1,7 +1,7 @@
 ---
+layout: doc-page-parent
 title: Defining schemas
 nav_order: 4
-# permalink: /defining-schemas
 previous:
     title: Basic usage
     rel_url: ./basic-usage
@@ -12,14 +12,15 @@ next:
 has_children: true
 ---
 
-# {{ page.title }}
-
+<!--
 - [Primitives](#primitives)
 - [Literals](#literals)
 - [Strings](#strings)
 - [Numbers](#numbers)
 - [Booleans](#booleans)
 - [Dates](#dates)
+
+
 - [Zod enums](#zod-enums)
 - [Native enums](#native-enums)
 - [Optionals](#optionals)
@@ -52,163 +53,7 @@ has_children: true
 - [Instanceof](#instanceof)
 - [Function schemas](#function-schemas)
 - [Preprocess](#preprocess)
-
----
-
-
-## Primitives
-
-```ts
-import { z } from "zod";
-
-// primitive values
-z.string();
-z.number();
-z.bigint();
-z.boolean();
-z.date();
-
-// empty types
-z.undefined();
-z.null();
-z.void(); // accepts undefined
-
-// catch-all types
-// allows any value
-z.any();
-z.unknown();
-
-// never type
-// allows no values
-z.never();
-```
-
-## Literals
-
-```ts
-const tuna = z.literal("tuna");
-const twelve = z.literal(12);
-const tru = z.literal(true);
-
-// retrieve literal value
-tuna.value; // "tuna"
-```
-
-> Currently there is no support for Date or bigint literals in Zod. If you have a use case for this feature, please file an issue.
-
-## Strings
-
-Zod includes a handful of string-specific validations.
-
-```ts
-z.string().max(5);
-z.string().min(5);
-z.string().length(5);
-z.string().email();
-z.string().url();
-z.string().uuid();
-z.string().cuid();
-z.string().regex(regex);
-
-// deprecated, equivalent to .min(1)
-z.string().nonempty();
-
-// optional custom error message
-z.string().nonempty({ message: "Can't be empty" });
-```
-
-> Check out [validator.js](https://github.com/validatorjs/validator.js) for a bunch of other useful string validation functions.
-
-#### Custom error messages
-
-You can customize certain errors when creating a string schema.
-
-```ts
-const name = z.string({
-  required_error: "Name is required",
-  invalid_type_error: "Name must be a string",
-});
-```
-
-When using validation methods, you can pass in an additional argument to provide a custom error message.
-
-```ts
-z.string().min(5, { message: "Must be 5 or more characters long" });
-z.string().max(5, { message: "Must be 5 or fewer characters long" });
-z.string().length(5, { message: "Must be exactly 5 characters long" });
-z.string().email({ message: "Invalid email address" });
-z.string().url({ message: "Invalid url" });
-z.string().uuid({ message: "Invalid UUID" });
-```
-
-## Numbers
-
-You can customize certain error messages when creating a number schema.
-
-```ts
-const age = z.number({
-  required_error: "Age is required",
-  invalid_type_error: "Age must be a number",
-});
-```
-
-Zod includes a handful of number-specific validations.
-
-```ts
-z.number().gt(5);
-z.number().gte(5); // alias .min(5)
-z.number().lt(5);
-z.number().lte(5); // alias .max(5)
-
-z.number().int(); // value must be an integer
-
-z.number().positive(); //     > 0
-z.number().nonnegative(); //  >= 0
-z.number().negative(); //     < 0
-z.number().nonpositive(); //  <= 0
-
-z.number().multipleOf(5); // Evenly divisible by 5. Alias .step(5)
-```
-
-Optionally, you can pass in a second argument to provide a custom error message.
-
-```ts
-z.number().lte(5, { message: "this👏is👏too👏big" });
-```
-
-## Booleans
-
-You can customize certain error messages when creating a boolean schema.
-
-```ts
-const isActive = z.boolean({
-  required_error: "isActive is required",
-  invalid_type_error: "isActive must be a boolean",
-});
-```
-
-## Dates
-z.date() accepts a date, not a date string
-```ts
-z.date().safeParse( new Date() ) // success: true
-z.date().safeParse( '2022-01-12T00:00:00.000Z' ) // success: false
-```
-
-To allow for dates or date strings, you can use preprocess
-```ts
-const dateSchema = z.preprocess(
-    arg => {
-        if ( typeof arg == 'string' || arg instanceof Date )
-            return new Date( arg )
-    },
-    z.date()
-)
-type DateSchema = z.infer<typeof dateSchema>
-// type DateSchema = Date
-
-dateSchema.safeParse( new Date( '1/12/22' ) ) // success: true
-dateSchema.safeParse( '2022-01-12T00:00:00.000Z' ) // success: true
-```
+-->
 
 ## Zod enums
 
@@ -232,7 +77,7 @@ const fish = ["Salmon", "Tuna", "Trout"];
 const FishEnum = z.enum(fish);
 ```
 
-**Autocompletion**
+### Autocompletion
 
 To get autocompletion with a Zod enum, use the `.enum` property of your schema:
 
@@ -1045,5 +890,3 @@ const castToString = z.preprocess((val) => String(val), z.string());
 ```
 
 This returns a `ZodEffects` instance. `ZodEffects` is a wrapper class that contains all logic pertaining to preprocessing, refinements, and transforms.
-
-{% include next-prev-page-links.liquid previous=page.previous next=page.next %}

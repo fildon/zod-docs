@@ -1,7 +1,7 @@
 ---
+layout: doc-page
 title: Type inference
 nav_order: 6
-# permalink: /type-inference
 previous:
     title: Schema methods
     rel_url: ./schema-methods
@@ -9,8 +9,6 @@ next:
     title: Errors
     rel_url: ./errors
 ---
-
-# {{ page.title }}
 
 You can extract the TypeScript type of any schema with `z.infer<typeof mySchema>` .
 
@@ -38,5 +36,3 @@ type output = z.output<typeof stringToNumber>; // number
 // equivalent to z.output!
 type inferred = z.infer<typeof stringToNumber>; // number
 ```
-
-{% include next-prev-page-links.liquid previous=page.previous next=page.next %}

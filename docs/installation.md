@@ -1,7 +1,7 @@
 ---
+layout: doc-page
 title: Installation
 nav_order: 2
-# permalink: /installation
 previous:
     title: What is Zod?
     rel_url: ./
@@ -9,11 +9,6 @@ next:
     title: Basic usage
     rel_url: ./basic-usage
 ---
-
-# {{ page.title }}
-{: .no_toc }
-
-{% include table-of-contents.liquid %}
 
 ## Node
 To install Zod v3:
@@ -41,5 +36,3 @@ npm install zod
 | 3.x | 4.1+ |
 | 2.x | 3.7+ |
 | 1.x | 3.3+ |
-
-{% include next-prev-page-links.liquid previous=page.previous next=page.next %}

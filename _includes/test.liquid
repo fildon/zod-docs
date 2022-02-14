@@ -1,33 +1,19 @@
-<hr>
-###### Page Data:
-{{ site.data.nav-pages | jsonify }}
-<hr>
-{{ site.data.nav-pages | pretty_json }}
-<hr>
-{{ site.data.nav-pages | neat_json }}
-<hr>
+{% comment %} {%- for page in site.pages %}
+    {{ page.title }}: {{ page.url -}}
+{%- endfor %} {% endcomment %}
 
-<!-- {% for page in site.data.nav-pages %} -->
-<!-- {{ page[0] }}: {{ page[1] | pretty_json }} -->
-<!-- {{ page[0] }}: {{ page[1] | neat_json }} -->
-<!-- {{ page[0] }}: {{ page[1] | jsonify }} -->
-<!-- {% endfor %} -->
+{% comment %} {%- assign titled_pages = site.pages | where_exp: "x", "x.title != nil" -%} {% endcomment %}
 
-<!--
-```yaml
-{%
-for data in page
-%}{%
-unless data[0] == 'content'
-%}{{ data[0] }}: {{ data[1]}}{%
-endunless
-%}{%
-unless forloop.last == true
-%}
-{%
-endunless
-%}{%
-endfor
-%}
-```
--->
+{% comment %} {%- for page in titled_pages %}
+    {{ page | jsonify -}}
+{%- endfor %} {% endcomment %}
+
+{% comment %} {%- assign nav-pages = site.data.nav-pages | where_exp: "x", "x.title != nil" -%} {% endcomment %}
+
+
+{% comment %} {%- assign nav-pages = site.data.nav-pages -%} {% endcomment %}
+
+{% comment %} {%- for page in nav-pages %}
+    {% assign page.slug = page.title | slugify -%}
+    {{ page | jsonify -}}
+{%- endfor %} {% endcomment %}

@@ -3,6 +3,8 @@ logo: /assets/images/logo.png
 
 remote_theme: pmarsceill/just-the-docs
 # theme: just-the-docs
+color_scheme: zod_color_scheme
+
 permalink: pretty
 
 # Back to top link
@@ -20,11 +22,22 @@ aux_links:
     GitHub:
         - https://github.com/colinhacks/zod
 
-defaults:
-    - scope:
-          path: docs/*
-      values:
-          permalink: :basename
+# collections:
+#     docs:
+#         output: true
+#         # permalink: :path
+#         # permalink: :path/:basename
+
+# defaults:
+#     - scope:
+#           path: docs/*
+#       values:
+#           layout: doc-page
+#           #   permalink: :basename
+#           #   permalink: :path
+#           #   permalink: :path/../:basename
+#           permalink: :path/../../../
+#           #   permalink: :path/:basename
 
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link

@@ -1,14 +1,12 @@
 ---
+layout: doc-home-page
 title: What is Zod?
-nav_order: 1
+nav_order: 0
 permalink: /
 next:
     title: Installation
     rel_url: installation
 ---
-
-![logo]({{ site.logo | absolute_url }})
-# {{ page.title }}
 
 Zod is a TypeScript-first schema declaration and validation library. I'm using the term 'schema' to broadly refer to any data type, from a simple `string` to a complex nested object.
 
@@ -23,5 +21,3 @@ Some other great aspects:
 - Concise, chainable interface
 - Functional approach: [parse, don't validate](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/)
 - Works with plain JavaScript too! You don't need to use TypeScript.
-
-{% include next-prev-page-links.liquid previous=page.previous next=page.next %}

@@ -1,13 +1,11 @@
 ---
+layout: doc-page
 title: Comparison
 nav_order: 9
-# permalink: /comparison
 previous:
     title: Ecosystem
     rel_url: ./ecosystem
 ---
-
-# {{ page.title }}
 
 - [Joi](#joi)
 - [Yup](#yup)
@@ -161,5 +159,3 @@ Good type inference support, but limited options for object type masking (no `.p
 Ow is focused on function input validation. It's a library that makes it easy to express complicated assert statements, but it doesn't let you parse untyped data. They support a much wider variety of types; Zod has a nearly one-to-one mapping with TypeScript's type system, whereas ow lets you validate several highly-specific types out of the box (e.g. `int32Array` , see full list in their README).
 
 If you want to validate function inputs, use function schemas in Zod! It's a much simpler approach that lets you reuse a function type declaration without repeating yourself (namely, copy-pasting a bunch of ow assertions at the beginning of every function). Also Zod lets you validate your return types as well, so you can be sure there won't be any unexpected data passed downstream.
-
-{% include next-prev-page-links.liquid previous=page.previous next=page.next %}
