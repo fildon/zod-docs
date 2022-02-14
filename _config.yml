@@ -13,6 +13,11 @@ back_to_top_text: Back to top
 last_edit_timestamp: true
 last_edit_time_format: "%b %e %Y"
 
+# Aux links for the upper right navigation
+aux_links:
+    GitHub:
+        - https://github.com/colinhacks/zod
+
 defaults:
     - scope:
           path: docs/*
