@@ -11,17 +11,15 @@ next:
 ---
 
 # {{ page.title }}
+{: .no_toc }
 
 ---
-
-- TOC
+- Table of Contents
 {:toc}
-
-- TOC {:toc}
-
 ---
 
-# Node
+
+## Node
 To install Zod v3:
 
 ```sh
@@ -30,7 +28,7 @@ npm install zod
 
 ---
 
-# TypeScript
+## TypeScript
 ⚠️ IMPORTANT: You must enable `strict` mode in your `tsconfig.json`. This is a best practice for all TypeScript projects.
 
 ```ts
