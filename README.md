@@ -3,5 +3,8 @@
     <h1 align="center">Zod Docs</h1>
 </p>
 
-- [Zod Docs Site](https://zod-org.github.io/zod-docs/)
-- [Zod Core Repo](https://github.com/colinhacks/zod)
+# [Zod Docs Site](https://zod-org.github.io/zod-docs/)
+[![pages-build-deployment](https://github.com/zod-org/zod-docs/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/zod-org/zod-docs/actions/workflows/pages/pages-build-deployment)
+
+---
+# [Zod Core Repo](https://github.com/colinhacks/zod)
