@@ -1,8 +1,8 @@
 title: Zod Docs
 logo: /assets/images/logo.png
 
-remote_theme: pmarsceill/just-the-docs
-# theme: just-the-docs
+remote_theme: pmarsceill/just-the-docs # use for gh-pages
+# theme: just-the-docs # use for local development
 color_scheme: zod_color_scheme
 
 permalink: pretty
