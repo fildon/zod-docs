@@ -1,8 +1,13 @@
+# https://github.com/zod-org/zod-docs/actions
+
 title: Zod
 # title: Zod Docs
 logo: /assets/images/logo.png
 
+# https://shopify.github.io/liquid/
+# https://jekyllrb.com/
 # https://github.com/pmarsceill/just-the-docs
+# https://pmarsceill.github.io/just-the-docs/
 remote_theme: pmarsceill/just-the-docs # use for gh-pages
 # theme: just-the-docs # use for local development
 

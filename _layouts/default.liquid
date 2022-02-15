@@ -77,7 +77,10 @@ layout: table_wrappers
       {% if site.search_enabled != false %}
         <div class="search">
           <div class="search-input-wrap">
-            <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search {{ site.title }}" aria-label="Search {{ site.title }}" autocomplete="off">
+            {% comment %} placeholder="Search {{ site.title }}" aria-label="Search {{ site.title }}" {% endcomment %}
+            <input type="text" id="search-input" class="search-input" tabindex="0"
+                   placeholder="Search" aria-label="Search"
+                   autocomplete="off">
             <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
           </div>
           <div id="search-results" class="search-results"></div>
@@ -142,7 +145,12 @@ layout: table_wrappers
 
         {% if page.has_children == true and page.has_toc != false %}
           <hr>
-            <h2>{{ page.toc_title | default: 'Table of contents' }}</h2>
+            {%- if page.toc_title -%}
+                <h2>{{ page.toc_title }}</h2>
+            {%- else -%}
+                <h2>Table of contents</h2>
+            {%- endif -%}
+            {% comment %} <h2>{{ page.toc_title | default: 'Table of contents' }}</h2> {% endcomment %}
           {% comment %} <h2 class="text-delta">Table of contents</h2> {% endcomment %}
           <ul>
             {%- assign children_list = pages_list | where: "parent", page.title | where: "grand_parent", page.parent -%}

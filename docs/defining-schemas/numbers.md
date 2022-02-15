@@ -16,7 +16,7 @@ next:
 z.number()
 ```
 
-## Number-specific modifiers
+## Number-specific validators
 ```ts
 z.number().gt( 5 )
 z.number().gte( 5 )
@@ -45,8 +45,8 @@ const age = z.number( {
 } )
 ```
 
-## Modifiers with custom error messages
-When using modifiers, you can pass in a second argument to provide a custom error message.
+## Validators with custom error messages
+When using validators, you can pass in a second argument to provide a custom error message.
 ```ts
 z.number().lte( 5, { message: 'this👏is👏too👏big' } )
 

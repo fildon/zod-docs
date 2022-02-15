@@ -16,7 +16,7 @@ next:
 z.string()
 ```
 
-## String-specific modifiers
+## String-specific validators
 ```ts
 z.string().length( 5 )
 z.string().min( 5 )
@@ -43,8 +43,8 @@ const name = z.string( {
 } )
 ```
 
-## Modifiers with custom error messages
-When using modifiers, you can pass in a second argument to provide a custom error message.
+## Validators with custom error messages
+When using validators, you can pass in a second argument to provide a custom error message.
 ```ts
 z.string().length( 5, { message: 'Must be exactly 5 characters long' } )
 z.string().min( 5, { message: 'Must be 5 or more characters long' } )

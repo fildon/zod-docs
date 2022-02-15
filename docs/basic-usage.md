@@ -19,12 +19,12 @@ import { z } from 'zod'
 const stringSchema = z.string()
 
 // parsing
-stringSchema.parse( 'Arthur Dent' ) // => 'Arthur Dent'
-stringSchema.parse( 42 ) // => throws ZodError
+stringSchema.parse( 'John Locke' ) // => 'John Locke'
+stringSchema.parse( 4815162342 ) // => throws ZodError
 
 // 'safe' parsing (doesn't throw error if validation fails)
-stringSchema.safeParse( 'Arthur Dent' ) // => { success: true; data: 'Arthur Dent' }
-stringSchema.safeParse( 42 ) // => { success: false; error: ZodError }
+stringSchema.safeParse( 'John Locke' ) // => { success: true; data: 'John Locke' }
+stringSchema.safeParse( 4815162342 ) // => { success: false; error: ZodError }
 ```
 
 ## Creating an object schema
@@ -41,6 +41,6 @@ type User = z.infer<typeof userSchema> // get the inferred type
 //     username: string;
 // }
 
-userSchema.parse( { username: 'arthur.dent' } ) // => { username: 'arthur.dent' }
-userSchema.parse( { username: 42 } ) // => throws ZodError
+userSchema.parse( { username: 'JohnLockeWalksAgain' } ) // => { username: 'JohnLockeWalksAgain' }
+userSchema.parse( { username: 4815162342 } ) // => throws ZodError
 ```
