@@ -10,7 +10,7 @@ next:
     path: ../defining-schemas
 ---
 
-## Creating a simple string schema
+## Creating a string schema
 
 ```ts
 import { z } from 'zod'

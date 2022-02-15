@@ -1,12 +1,12 @@
 <div class='d-flex flex-justify-between'>
     <div>
         {% if include.previous %}
-        <a class='btn' href='{{ include.previous.path }}'>Prev: {{ include.previous.title }}</a>
+        <a class='btn' href='{{ include.previous.path }}'>Previous Page: {{ include.previous.title }}</a>
         {% endif %}
     </div>
     <div>
         {% if include.next %}
-        <a class='btn' href='{{ include.next.path }}'>Next: {{ include.next.title }}</a>
+        <a class='btn' href='{{ include.next.path }}'>Next Page: {{ include.next.title }}</a>
         {% endif %}
     </div>
 </div>

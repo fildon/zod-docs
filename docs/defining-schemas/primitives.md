@@ -5,7 +5,7 @@ parent: Defining schemas
 nav_order: 1
 previous:
     title: Defining schemas
-    path: ../../defining-schemas
+    path: ../
 next:
     title: Literals
     path: ../literals
