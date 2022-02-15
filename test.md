@@ -1,13 +1,6 @@
 ---
 nav_exclude: true
----
 
-# Test
-
-{% include test.liquid %}
-
-
----
 prop: doc-home-page
 propOfObject:
     title: Installation
@@ -23,5 +16,8 @@ arrayOfObjects:
       path: /docs/installation
     - title: Installation
       path: /docs/installation
-
 ---
+
+# Test
+
+{% include test.liquid %}
