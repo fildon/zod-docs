@@ -1,5 +1,6 @@
 __*
 .vscode
+ignore*
 
 _site
 .sass-cache

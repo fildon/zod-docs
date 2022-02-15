@@ -4,11 +4,11 @@ title: Dates
 parent: Defining schemas
 nav_order: 6
 previous:
-    title: Numbers
-    path: ../numbers
+    title: Booleans
+    path: ../booleans
 next:
-    title: Schema methods
-    path: ../../schema-methods
+    title: Zod Enum
+    path: ../zod-enum
 ---
 
 ## Basic Schema
