@@ -5,7 +5,7 @@ nav_order: 0
 permalink: /
 next:
     title: Installation
-    rel_url: ./installation
+    path: /docs/installation
 ---
 
 Zod is a TypeScript-first schema declaration and validation library. I'm using the term 'schema' to broadly refer to any data type, from a simple `string` to a complex nested object.

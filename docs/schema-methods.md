@@ -4,10 +4,10 @@ title: Schema methods
 nav_order: 5
 previous:
     title: Defining schemas
-    rel_url: ./defining-schemas
+    path: ../defining-schemas
 next:
     title: Type inference
-    rel_url: ./type-inference
+    path: ../type-inference
 ---
 
 All Zod schemas contain these methods.

@@ -4,10 +4,10 @@ title: Errors
 nav_order: 7
 previous:
     title: Type inference
-    rel_url: ./type-inference
+    path: ../type-inference
 next:
     title: Ecosystem
-    rel_url: ./ecosystem
+    path: ../ecosystem
 ---
 
 Zod provides a subclass of Error called `ZodError`. ZodErrors contain an `issues` array containing detailed information about the validation problems.

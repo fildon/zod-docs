@@ -4,10 +4,10 @@ title: Installation
 nav_order: 2
 previous:
     title: What is Zod?
-    rel_url: ./
+    path: /
 next:
     title: Basic usage
-    rel_url: ./basic-usage
+    path: ../basic-usage
 ---
 
 ## Node

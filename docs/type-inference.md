@@ -4,10 +4,10 @@ title: Type inference
 nav_order: 6
 previous:
     title: Schema methods
-    rel_url: ./schema-methods
+    path: ../schema-methods
 next:
     title: Errors
-    rel_url: ./errors
+    path: ../errors
 ---
 
 You can extract the TypeScript type of any schema with `z.infer<typeof mySchema>` .

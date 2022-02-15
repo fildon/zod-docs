@@ -5,52 +5,57 @@ parent: Defining schemas
 nav_order: 6
 previous:
     title: Numbers
-    rel_url: ../numbers
+    path: ../numbers
 next:
-    title: Dates
-    rel_url: ../dates
+    title: Schema methods
+    path: ../../schema-methods
 ---
 
-## Custom error messages
-
-You can customize certain error messages when creating a schema.
-
+## Basic Schema
 ```ts
-const dateSchema = z.date({
-  required_error: "dateSchema is required",
-  invalid_type_error: "dateSchema must be a Date",
-});
+z.date()
 ```
 
-## [Coercion](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion)
+## Custom error messages
+You can customize certain error messages when creating a schema.
+```ts
+const birthday = z.date( {
+    required_error: 'birthday is required',
+    invalid_type_error: 'birthday must be a Date',
+} )
+```
+
+## Coercion
+[MDN Docs: Coercion](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion)
+
 z.date() accepts a date, NOT a date string
 ```ts
 z.date().safeParse( new Date() ) // success: true
 z.date().safeParse( '2022-01-12T00:00:00.000Z' ) // success: false
 ```
 
-To coerce any input into a Date, you can use [preprocess]() // TODO add link
+To coerce any input into a Date, you can use [`preprocess`]() // TODO add link
 ```ts
-const dateSchema = z.preprocess(
+const birthday = z.preprocess(
     input => new Date( input as any ),
     z.date()
 )
-type DateSchema = z.infer<typeof dateSchema>
-// type DateSchema = Date
+type Birthday = z.infer<typeof birthday>
+// type Birthday = Date
 
-dateSchema.safeParse( new Date() ) // success: true
-dateSchema.safeParse( '2022-01-12T00:00:00.000Z' ) // success: true
-dateSchema.safeParse( 1641945600000 ) // success: true
+birthday.safeParse( new Date() ) // success: true
+birthday.safeParse( '2022-01-12T00:00:00.000Z' ) // success: true
+birthday.safeParse( 1641945600000 ) // success: true
 ```
 ⚠️ Be careful, this might allow unintended values
 ```ts
-dateSchema.safeParse( null ) // success: true
+birthday.safeParse( null ) // success: true
 ```
 
 To make sure you are only allowing the values you intend, check the type of `input` before you return the new value
 
 ```ts
-const dateSchema = z.preprocess(
+const birthday = z.preprocess(
     input => {
         if ( input instanceof Date ) return input
         if ( typeof input == 'string' || typeof input == 'number' )
@@ -58,11 +63,11 @@ const dateSchema = z.preprocess(
     },
     z.date()
 )
-type DateSchema = z.infer<typeof dateSchema>
-// type DateSchema = Date
+type Birthday = z.infer<typeof birthday>
+// type Birthday = Date
 
-dateSchema.safeParse( new Date() ) // success: true
-dateSchema.safeParse( '2022-01-12T00:00:00.000Z' ) // success: true
-dateSchema.safeParse( 1641945600000 ) // success: true
-dateSchema.safeParse( null ) // success: false
+birthday.safeParse( new Date() ) // success: true
+birthday.safeParse( '2022-01-12T00:00:00.000Z' ) // success: true
+birthday.safeParse( 1641945600000 ) // success: true
+birthday.safeParse( null ) // success: false
 ```

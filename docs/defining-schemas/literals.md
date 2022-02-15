@@ -5,19 +5,32 @@ parent: Defining schemas
 nav_order: 2
 previous:
     title: Primitives
-    rel_url: ../primitives
+    path: ../primitives
 next:
     title: Strings
-    rel_url: ../strings
+    path: ../strings
 ---
 
+## Basic Schemas
 ```ts
-const tuna = z.literal("tuna");
-const twelve = z.literal(12);
-const tru = z.literal(true);
-
-// retrieve literal value
-tuna.value; // "tuna"
+z.literal( 'tuna' )
+z.literal( 12 )
+z.literal( true )
+```
+get allowed literal value
+```ts
+z.literal( 'tuna' ).value // 'tuna'
+z.literal( 12 ).value // 12
+z.literal( true ).value // true
 ```
 
-> Currently there is no support for Date or bigint literals in Zod. If you have a use case for this feature, please file an issue.
+## Custom error messages
+You can customize certain error messages when creating a schema.
+```ts
+const tuna = z.literal( 'tuna', {
+    required_error: 'tuna is required',
+    invalid_type_error: `tuna must be 'tuna'`,
+} )
+```
+
+Currently there is no support for Date or bigint literals in Zod. If you have a use case for this feature, please [file an issue](https://github.com/colinhacks/zod/issues).

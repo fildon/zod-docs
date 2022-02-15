@@ -1,19 +1,19 @@
 <div class='d-flex flex-justify-between'>
     <div>
         {% if include.previous %}
-        <a class='btn' href='{{ include.previous.rel_url }}'>Prev: {{ include.previous.title }}</a>
+        <a class='btn' href='{{ include.previous.path }}'>Prev: {{ include.previous.title }}</a>
         {% endif %}
     </div>
     <div>
         {% if include.next %}
-        <a class='btn' href='{{ include.next.rel_url }}'>Next: {{ include.next.title }}</a>
+        <a class='btn' href='{{ include.next.path }}'>Next: {{ include.next.title }}</a>
         {% endif %}
     </div>
 </div>
 
 <script style='display: none;'>
     class PageLink {
-        /** @type {string} */ rel_url
+        /** @type {string} */ path
         /** @type {string} */ title
     }
 

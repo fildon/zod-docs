@@ -4,7 +4,7 @@ title: Comparison
 nav_order: 9
 previous:
     title: Ecosystem
-    rel_url: ./ecosystem
+    path: ../ecosystem
 ---
 
 - [Joi](#joi)

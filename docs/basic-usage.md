@@ -4,41 +4,43 @@ title: Basic usage
 nav_order: 3
 previous:
     title: Installation
-    rel_url: ./installation
+    path: ../installation
 next:
     title: Defining schemas
-    rel_url: ./defining-schemas
+    path: ../defining-schemas
 ---
 
 ## Creating a simple string schema
 
 ```ts
-import { z } from "zod";
+import { z } from 'zod'
 
 // creating a schema for strings
-const mySchema = z.string();
+const stringSchema = z.string()
 
 // parsing
-mySchema.parse("tuna"); // => "tuna"
-mySchema.parse(12); // => throws ZodError
+stringSchema.parse( 'Arthur Dent' ) // => 'Arthur Dent'
+stringSchema.parse( 42 ) // => throws ZodError
 
-// "safe" parsing (doesn't throw error if validation fails)
-mySchema.safeParse("tuna"); // => { success: true; data: "tuna" }
-mySchema.safeParse(12); // => { success: false; error: ZodError }
+// 'safe' parsing (doesn't throw error if validation fails)
+stringSchema.safeParse( 'Arthur Dent' ) // => { success: true; data: 'Arthur Dent' }
+stringSchema.safeParse( 42 ) // => { success: false; error: ZodError }
 ```
 
 ## Creating an object schema
 
 ```ts
-import { z } from "zod";
+import { z } from 'zod'
 
-const User = z.object({
+const userSchema = z.object( {
     username: z.string(),
-});
+} )
 
-User.parse({ username: "Ludwig" });
+type User = z.infer<typeof userSchema> // get the inferred type
+// type User = {
+//     username: string;
+// }
 
-// extract the inferred type
-type User = z.infer<typeof User>;
-// { username: string }
+userSchema.parse( { username: 'arthur.dent' } ) // => { username: 'arthur.dent' }
+userSchema.parse( { username: 42 } ) // => throws ZodError
 ```

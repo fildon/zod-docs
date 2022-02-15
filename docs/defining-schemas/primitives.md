@@ -5,31 +5,38 @@ parent: Defining schemas
 nav_order: 1
 previous:
     title: Defining schemas
-    rel_url: ../../defining-schemas
+    path: ../../defining-schemas
 next:
     title: Literals
-    rel_url: ../literals
+    path: ../literals
 ---
 
+## Basic Schemas
 ```ts
-// primitive values
-z.string();
-z.number();
-z.bigint();
-z.boolean();
-z.date();
+z.string()
+z.number()
+z.bigint()
+z.boolean()
+z.date()
+```
 
-// empty types
-z.undefined();
-z.null();
-z.void(); // accepts undefined
+## Empty Schemas
+```ts
+z.undefined()
+z.null()
+z.void() // accepts undefined
+```
 
-// catch-all types
-// allows any value
-z.any();
-z.unknown();
+## Catch-all Schemas
+Allows any value.<br>
+⚠️ These allow `undefined`, which causes them to be [`optional`](). // TODO add link
+```ts
+z.any()
+z.unknown()
+```
 
-// never type
-// allows no values
-z.never();
+## Never Schema
+Doesn't allow any values.
+```ts
+z.never()
 ```

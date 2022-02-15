@@ -4,10 +4,10 @@ title: Defining schemas
 nav_order: 4
 previous:
     title: Basic usage
-    rel_url: ./basic-usage
+    path: ../basic-usage
 next:
-    title: Schema methods
-    rel_url: ./schema-methods
+    title: Primitives
+    path: ./primitives
 
 has_children: true
 ---
