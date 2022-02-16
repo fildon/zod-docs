@@ -6,8 +6,8 @@ previous:
     title: Type inference
     path: ../type-inference
 next:
-    title: Ecosystem
-    path: ../ecosystem
+    title: Guides
+    path: /docs/guides
 ---
 
 Zod provides a subclass of Error called `ZodError`. ZodErrors contain an `issues` array containing detailed information about the validation problems.
@@ -44,4 +44,4 @@ data.error.format();
 } */
 ```
 
-For detailed information about the possible error codes and how to customize error messages, check out the dedicated error handling guide: [ERROR_HANDLING.md](ERROR_HANDLING.md)
+For detailed information about the possible error codes and how to customize error messages, check out the dedicated error handling guide: [Error Handling](/docs/guides/error-handling)

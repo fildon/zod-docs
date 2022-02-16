@@ -1,7 +1,7 @@
 ---
 layout: doc-page
 title: Comparison
-nav_order: 9
+nav_order: 10
 previous:
     title: Ecosystem
     path: ../ecosystem

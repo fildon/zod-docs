@@ -3,8 +3,8 @@ layout: doc-page
 title: Type inference
 nav_order: 6
 previous:
-    title: Schema methods
-    path: ../schema-methods
+    title: .and
+    path: /docs/schema-methods/and
 next:
     title: Errors
     path: ../errors

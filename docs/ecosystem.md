@@ -1,10 +1,11 @@
 ---
 layout: doc-page
 title: Ecosystem
-nav_order: 8
+nav_order: 9
+# nav_exclude: true
 previous:
-    title: Errors
-    path: ../errors
+    title: Error Handling
+    path: /docs/guides/error-handling
 next:
     title: Comparison
     path: ../comparison
