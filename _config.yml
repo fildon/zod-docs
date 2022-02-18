@@ -1,7 +1,6 @@
 # https://github.com/zod-org/zod-docs/actions
 
 title: Zod
-# title: Zod Docs
 logo: /assets/images/logo.png
 
 # https://shopify.github.io/liquid/
@@ -27,8 +26,12 @@ last_edit_time_format: "%b %e %Y"
 aux_links_new_tab: true
 # Aux links for the upper right navigation
 aux_links:
+    Discord:
+        - https://discord.gg/EuFJWgP2TG
     GitHub:
         - https://github.com/colinhacks/zod
+    NPM:
+        - https://www.npmjs.com/package/zod
 
 # collections:
 #     docs:
