@@ -30,7 +30,7 @@ aux_links:
         - https://discord.gg/EuFJWgP2TG
     GitHub:
         - https://github.com/colinhacks/zod
-    NPM:
+    npm:
         - https://www.npmjs.com/package/zod
 
 # collections:
