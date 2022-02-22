@@ -29,7 +29,7 @@ You can separately extract the input and output types like so:
 ```ts
 const stringToNumber = z.string().transform((val) => val.length);
 
-// ⚠️ Important: z.infer returns the OUTPUT type!
+// ⚠️ IMPORTANT: z.infer returns the OUTPUT type!
 type input = z.input<typeof stringToNumber>; // string
 type output = z.output<typeof stringToNumber>; // number
 
