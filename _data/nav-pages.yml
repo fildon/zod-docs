@@ -1,5 +1,5 @@
 - title: What is Zod?
-  permalink: /
+  index_page: true
 
 - title: Installation
 
@@ -9,12 +9,31 @@
   children:
       - title: Primitives
       - title: Literals
-      - title: Strings
-      - title: Numbers
-      - title: Booleans
-      - title: Dates
+      #   - title: Strings
+      #   - title: Numbers
+      #   - title: Booleans
+      #   - title: Dates
+      #   - title: Zod Enum
+      #   - title: Native Enum
+      #   - title: Optionals
 
 - title: Schema methods
+  children:
+      - title: .parse
+      - title: .parseAsync
+      #   - title: .safeParse
+      #   - title: .safeParseAsync
+      #   - title: .refine
+      #   - title: .superRefine
+      #   - title: .transform
+      #   - title: .optional
+      #   - title: .default
+      #   - title: .nullable
+      #   - title: .nullish
+      #   - title: .array
+      #   - title: .promise
+      #   - title: .or
+      #   - title: .and
 
 - title: Type inference
 

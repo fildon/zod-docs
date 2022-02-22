@@ -1,11 +1,17 @@
 ---
+layout: test-layout
 nav_exclude: true
 ---
 
 # Test
 
-{% include test.liquid %}
 
+{% comment %}
+    {% include test.liquid %}
+{% endcomment %}
+
+
+{% comment %}
 
 ---
 
@@ -180,7 +186,7 @@ const deepPartialUser = user.deepPartial();
 */
 ```
 
-> Important limitation: deep partials only work as expected in hierarchies of objects, arrays, and tuples.
+⚠️ IMPORTANT limitation: deep partials only work as expected in hierarchies of objects, arrays, and tuples.
 
 #### Unrecognized keys
 
@@ -709,3 +715,5 @@ const castToString = z.preprocess((val) => String(val), z.string());
 ```
 
 This returns a `ZodEffects` instance. `ZodEffects` is a wrapper class that contains all logic pertaining to preprocessing, refinements, and transforms.
+
+ {% endcomment %}

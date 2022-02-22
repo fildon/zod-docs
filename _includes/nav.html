@@ -60,6 +60,7 @@
     {%- for node in pages_list -%}
     {%- if node.parent == nil -%}
     {%- unless node.nav_exclude -%}
+    {% comment %} {{ node.url }} {% endcomment %}
     <!-- 
         TODO allow frontmatter to control nav-list-item active
     -->
