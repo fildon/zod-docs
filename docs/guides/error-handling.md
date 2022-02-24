@@ -35,9 +35,10 @@ Each ZodError has an `issues` property that is an array of `ZodIssues`. Each iss
 
 ## ZodIssue
 
-`ZodIssue` is _not_ a class. It is a [discriminated union](https://www.typescriptlang.org/docs/handbook/advanced-types.html#discriminated-unions).
+`ZodIssue` is _not_ a class. It is a [discriminated union](https://www.typescriptlang.org/docs/handbook/advanced-types.html#discriminated-unions){:target="_blank"}.
 
-The link above is the best way to learn about the concept. Discriminated unions are an ideal way to represent a data structures that may be one of many possible variants. You can see all the possible variants defined in the [ZodError.ts source](https://github.com/colinhacks/zod/blob/master/src/ZodError.ts). They are also described in the table below if you prefer.
+
+The link above is the best way to learn about the concept. Discriminated unions are an ideal way to represent a data structures that may be one of many possible variants. You can see all the possible variants defined in [ZodError.ts](https://github.com/colinhacks/zod/blob/master/src/ZodError.ts){:target="_blank"}. They are also described in the table below if you prefer.
 
 _Every_ ZodIssue has these fields:
 
@@ -53,7 +54,7 @@ _Every_ ZodIssue has these fields:
 
 | code                             | additional fields                                                                                                                                                                                                                                                                                                                                                    |
 | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ZodIssueCode.invalid_type        | `expected: ZodParsedType` <br> `received: ZodParsedType` <br><br>Jump to [this section](#parsedtype) for a breakdown of the possible values of ZodParsedType.                                                                                                                                                                                                        |
+| ZodIssueCode.invalid_type        | `expected: ZodParsedType` <br> `received: ZodParsedType` <br><br>Jump to [ZodParsedType](#zodparsedtype) for a breakdown of the possible values of ZodParsedType.                                                                                                                                                                                                        |
 | ZodIssueCode.unrecognized_keys   | `keys: string[]`<br>The list of unrecognized keys<br>                                                                                                                                                                                                                                                                                                                |
 | ZodIssueCode.invalid_union       | `unionErrors: ZodError[]` <br> The errors thrown by each element of the union.                                                                                                                                                                                                                                                                                       |
 | ZodIssueCode.invalid_enum_value  | `options: string[]` <br> The set of acceptable string values for this enum.                                                                                                                                                                                                                                                                                          |
@@ -64,7 +65,7 @@ _Every_ ZodIssue has these fields:
 | ZodIssueCode.too_small           | `type: "string" \| "number" \| "array"` <br>The type of the data failing validation<br><br> `minimum: number` <br>The expected length/value.<br><br>`inclusive: boolean`<br>Whether the minimum is included in the range of acceptable values.<br>                                                                                                                   |
 | ZodIssueCode.too_big             | `type: "string" \| "number" \| "array"` <br>The type of the data failing validation<br><br> `maximum: number` <br>The expected length/value.<br><br>`inclusive: boolean`<br>Whether the minimum is included in the range of acceptable values.<br>                                                                                                                   |
 | ZodIssueCode.not_multiple_of     | `multipleOf: number` <br>The value the number should be a multiple of.<br>                                                                                                                                                                                                                                                                                           |
-| ZodIssueCode.custom              | `params: { [k: string]: any }` <br> This is the error code throw by refinements (unless you are using `superRefine` in which case it's possible to throw issues of any `code`). You are able to pass in a `params` object here that is available in your custom error maps (see [ZodErrorMap](#Customizing-errors-with-ZodErrorMap) below for details on error maps) |
+| ZodIssueCode.custom              | `params: { [k: string]: any }` <br> This is the error code throw by refinements (unless you are using `superRefine` in which case it's possible to throw issues of any `code`). You are able to pass in a `params` object here that is available in your custom error maps (see [ZodErrorMap](#customizing-errors-with-zoderrormap) below for details on error maps) |
 
 <!--
 | ZodIssueCode.nonempty_array_is_empty | _no additional properties_                                      |
@@ -203,7 +204,7 @@ But how is the value of `ctx.defaultError` determined?
 
 Error messages in Zod are generated by passing metadata about a validation issue through a chain of error maps. Error maps with higher priority override messages generated by maps with lower priority.
 
-The lowest priority map is the `defaultErrorMap`, which defined in [`src/ZodError.ts`](https://github.com/colinhacks/zod/blob/master/src/ZodError.ts). This produces the default error message for all issues in Zod.
+The lowest priority map is the `defaultErrorMap`, which defined in [`src/ZodError.ts`](https://github.com/colinhacks/zod/blob/master/src/ZodError.ts){:target="_blank"}. This produces the default error message for all issues in Zod.
 
 ### Global error map
 

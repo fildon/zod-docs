@@ -15,8 +15,6 @@ next:
 A convenience method that returns an optional version of a schema.
 
 ```ts
-const optionalString = z.string().optional(); // string | undefined
-
-// equivalent to
-z.optional(z.string());
+const optionalString = z.string().optional() // string | undefined
+z.optional(z.string()) // equivalent
 ```

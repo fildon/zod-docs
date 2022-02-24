@@ -18,11 +18,11 @@ next:
 An asynchronous version of `safeParse`.
 
 ```ts
-await stringSchema.safeParseAsync("billie");
+await stringSchema.safeParseAsync("billie")
 ```
 
 For convenience, this has been aliased to `.spa`:
 
 ```ts
-await stringSchema.spa("billie");
+await stringSchema.spa("billie")
 ```

@@ -6,9 +6,9 @@ nav_order: 9
 previous:
     title: Native Enum
     path: ../enum-native
-# next:
-#     title: Schema methods
-#     path: ../../schema-methods
+next:
+    title: Nullables
+    path: ../nullables
 ---
 
 You can make any schema optional with `z.optional()`

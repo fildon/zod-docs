@@ -24,7 +24,7 @@ For example, you can define a custom validation check on _any_ Zod schema with `
 ```ts
 const myString = z.string().refine((val) => val.length <= 255, {
   message: "String can't be more than 255 characters",
-});
+})
 ```
 
 > ⚠️ Refinement functions should not throw. Instead they should return a falsy value to signal failure.
@@ -39,15 +39,15 @@ As you can see, `.refine` takes two arguments.
 ```ts
 type RefineParams = {
   // override error message
-  message?: string;
+  message?: string
 
   // appended to error path
-  path?: (string | number)[];
+  path?: (string | number)[]
 
   // params object you can use to customize message
   // in error map
-  params?: object;
-};
+  params?: object
+}
 ```
 
 For advanced cases, the second argument can also be a function that returns `RefineParams`/
@@ -56,7 +56,7 @@ For advanced cases, the second argument can also be a function that returns `Ref
 z.string().refine(
   (val) => val.length > 10,
   (val) => ({ message: `${val} is not more than 10 characters` })
-);
+)
 ```
 
 ### Customize error path
@@ -71,7 +71,7 @@ const passwordForm = z
     message: "Passwords don't match",
     path: ["confirm"], // path of error
   })
-  .parse({ password: "asdf", confirm: "qwer" });
+  .parse({ password: "asdf", confirm: "qwer" })
 ```
 
 Because you provided a `path` parameter, the resulting error will be:
@@ -93,8 +93,8 @@ Refinements can also be async:
 ```ts
 const userId = z.string().refine(async (id) => {
   // verify that ID exists in database
-  return true;
-});
+  return true
+})
 ```
 
 > ⚠️If you use async refinements, you must use the `.parseAsync` method to parse data! Otherwise Zod will throw an error.
@@ -106,7 +106,7 @@ Transforms and refinements can be interleaved:
 ```ts
 z.string()
   .transform((val) => val.length)
-  .refine((val) => val > 25);
+  .refine((val) => val > 25)
 ```
 
 <!-- Note that the `path` is set to `["confirm"]` , so you can easily display this error underneath the "Confirm password" textbox.
@@ -118,7 +118,7 @@ const allForms = z.object({ passwordForm }).parse({
     password: "asdf",
     confirm: "qwer",
   },
-});
+})
 ```
 
 would result in

@@ -16,8 +16,6 @@ next:
 A convenience method for promise types:
 
 ```ts
-const stringPromise = z.string().promise(); // Promise<string>
-
-// equivalent to
-z.promise(z.string());
+const stringPromise = z.string().promise() // Promise<string>
+z.promise(z.string()) // equivalent
 ```

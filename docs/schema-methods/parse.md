@@ -20,7 +20,7 @@ Given any Zod schema, you can call its `.parse` method to check `data` is valid.
 ⚠️ IMPORTANT: In Zod 2 and Zod 1.11+, the value returned by `.parse` is a _deep clone_ of the variable you passed in. This was also the case in zod@1.4 and earlier.
 
 ```ts
-const stringSchema = z.string();
-stringSchema.parse("fish"); // => returns "fish"
-stringSchema.parse(12); // throws Error('Non-string type: number');
+const stringSchema = z.string()
+stringSchema.parse("fish") // => returns "fish"
+stringSchema.parse(12) // throws Error('Non-string type: number')
 ```

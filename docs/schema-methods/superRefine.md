@@ -24,16 +24,16 @@ const Strings = z.array(z.string()).superRefine((val, ctx) => {
       type: "array",
       inclusive: true,
       message: "Too many items 😡",
-    });
+    })
   }
 
   if (val.length !== new Set(val).size) {
     ctx.addIssue({
       code: z.ZodIssueCode.custom,
       message: `No duplicated allowed.`,
-    });
+    })
   }
-});
+})
 ```
 
 You can add as many issues as you like. If `ctx.addIssue` is NOT called during the execution of the function, validation passes.
@@ -53,7 +53,7 @@ const Strings = z
         code: z.ZodIssueCode.custom,
         message: "foo",
         fatal: true,
-      });
+      })
     }
   })
   .superRefine((val, ctx) => {
@@ -61,7 +61,7 @@ const Strings = z
       ctx.addIssue({
         code: z.ZodIssueCode.custom,
         message: "bar",
-      });
+      })
     }
-  });
+  })
 ```

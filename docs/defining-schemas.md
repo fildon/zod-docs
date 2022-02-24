@@ -20,7 +20,6 @@ toc_title: ''
 - [Numbers](#numbers)
 - [Booleans](#booleans)
 - [Dates](#dates)
-
 - [Zod enums](#zod-enums)
 - [Native enums](#native-enums)
 - [Optionals](#optionals)
@@ -29,6 +28,7 @@ toc_title: ''
 - [Arrays](#arrays)
 - [Tuples](#tuples)
 - [Records](#records)
+
 - [Maps](#maps)
 - [Sets](#sets)
 - [Unions](#unions)

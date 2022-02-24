@@ -16,8 +16,6 @@ next:
 A convenience method for union types.
 
 ```ts
-z.string().or(z.number()); // string | number
-
-// equivalent to
-z.union([z.string(), z.number()]);
+z.string().or(z.number()) // string | number
+z.union([z.string(), z.number()]) // equivalent
 ```
