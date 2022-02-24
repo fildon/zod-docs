@@ -7,13 +7,6 @@ previous:
     path: ../ecosystem
 ---
 
-- [Joi](#joi)
-- [Yup](#yup)
-- [io-ts](#io-ts)
-- [Runtypes](#runtypes)
-
----
-
 There are a handful of other widely-used validation libraries, but all of them have certain design limitations that make for a non-ideal developer experience.
 
 <!-- The table below summarizes the feature differences. Below the table there are more involved discussions of certain alternatives, where necessary. -->

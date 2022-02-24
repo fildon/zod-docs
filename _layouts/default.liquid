@@ -66,18 +66,12 @@ layout: table_wrappers
         {% include nav.html pages=site.html_pages %}
       {% endif %}
     </nav>
-    {% comment %}
-        <footer class="site-footer">
-        This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
-        </footer>
-    {% endcomment %}
   </div>
   <div class="main" id="top">
     <div id="main-header" class="main-header">
       {% if site.search_enabled != false %}
         <div class="search">
           <div class="search-input-wrap">
-            {% comment %} placeholder="Search {{ site.title }}" aria-label="Search {{ site.title }}" {% endcomment %}
             <input type="text" id="search-input" class="search-input" tabindex="0"
                    placeholder="Search" aria-label="Search"
                    autocomplete="off">

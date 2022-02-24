@@ -16,8 +16,6 @@ next:
 A convenience method that returns an array schema for the given type:
 
 ```ts
-const nullableString = z.string().array(); // string[]
-
-// equivalent to
-z.array(z.string());
+const nullableString = z.string().array() // string[]
+z.array(z.string()) // equivalent
 ```

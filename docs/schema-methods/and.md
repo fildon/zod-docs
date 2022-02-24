@@ -16,8 +16,14 @@ next:
 A convenience method for creating intersection types.
 
 ```ts
-z.object({ name: z.string() }).and(z.object({ age: z.number() })); // { name: string } & { age: number }
+z.object( {
+    name: z.string()
+} ).and(
+    z.object( { age: z.number() } )
+) // { name: string } & { age: number }
 
-// equivalent to
-z.intersection(z.object({ name: z.string() }), z.object({ age: z.number() }));
+z.intersection(
+    z.object( { name: z.string() } ),
+    z.object( { age: z.number() } )
+) // equivalent
 ```

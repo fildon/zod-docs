@@ -16,11 +16,11 @@ next:
 To transform data after parsing, use the `transform` method.
 
 ```ts
-const stringToNumber = z.string().transform((val) => myString.length);
-stringToNumber.parse("string"); // => 6
+const stringToNumber = z.string().transform((val) => myString.length)
+stringToNumber.parse("string") // => 6
 ```
 
-> ⚠️ Transform functions must not throw. Make sure to use refinements before the transform to make sure the input can be parsed by the transform.
+⚠️ Transform functions must not throw. Make sure to use refinements before the transform to make sure the input can be parsed by the transform.
 
 ### Chaining order
 
@@ -30,9 +30,9 @@ Note that `stringToNumber` above is an instance of the `ZodEffects` subclass. It
 const emailToDomain = z
   .string()
   .email()
-  .transform((val) => val.split("@")[1]);
+  .transform((val) => val.split("@")[1])
 
-emailToDomain.parse("colinhacks@example.com"); // => example.com
+emailToDomain.parse("colinhacks@example.com") // => example.com
 ```
 
 ### Relationship to refinements
@@ -42,7 +42,7 @@ Transforms and refinements can be interleaved:
 ```ts
 z.string()
   .transform((val) => val.length)
-  .refine((val) => val > 25);
+  .refine((val) => val > 25)
 ```
 
 ### Async transforms
@@ -54,8 +54,8 @@ const IdToUser = z
   .string()
   .uuid()
   .transform(async (id) => {
-    return await getUserById(id);
-  });
+    return await getUserById(id)
+  })
 ```
 
-> ⚠️ If your schema contains asynchronous transforms, you must use .parseAsync() or .safeParseAsync() to parse data. Otherwise Zod will throw an error.
+⚠️ If your schema contains asynchronous transforms, you must use .parseAsync() or .safeParseAsync() to parse data. Otherwise Zod will throw an error.

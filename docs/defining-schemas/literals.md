@@ -17,11 +17,11 @@ z.literal( 'tuna' )
 z.literal( 12 )
 z.literal( true )
 ```
-get allowed literal value
+retrieve literal value
 ```ts
 z.literal( 'tuna' ).value // 'tuna'
-z.literal( 12 ).value // 12
-z.literal( true ).value // true
+z.literal( 12 ).value     // 12
+z.literal( true ).value   // true
 ```
 
 ## Custom error messages

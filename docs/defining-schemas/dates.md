@@ -8,7 +8,7 @@ previous:
     path: ../booleans
 next:
     title: Zod Enum
-    path: ../zod-enum
+    path: ../enum-zod
 ---
 
 ## Basic Schema

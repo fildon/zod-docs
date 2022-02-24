@@ -16,8 +16,6 @@ next:
 A convenience method that returns an nullable version of a schema.
 
 ```ts
-const nullableString = z.string().nullable(); // string | null
-
-// equivalent to
-z.nullable(z.string());
+const nullableString = z.string().nullable() // string | null
+z.nullable(z.string()) // equivalent
 ```
