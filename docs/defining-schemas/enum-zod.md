@@ -18,7 +18,7 @@ type FishEnum = z.infer<typeof fishEnum>
 // type FishEnum = 'Salmon' | 'Tuna' | 'Trout'
 ```
 
-`z.enum` is a Zod-native way to declare a schema with a fixed set of allowable _string_ values. Pass the array of values directly into `z.enum()`. Alternatively, use `as const` to define your enum values as a tuple of strings. See the [const assertion docs](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-4.html#const-assertions) for details.
+`z.enum` is a Zod-native way to declare a schema with a fixed set of allowable _string_ values. Pass the array of values directly into `z.enum()`. Alternatively, use `as const` to define your enum values as a tuple of strings. See the [const assertion docs](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-4.html#const-assertions){:target="_blank"} for details.
 
 ```ts
 const fish = [ 'Salmon', 'Tuna', 'Trout' ] as const

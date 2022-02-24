@@ -57,15 +57,15 @@ Branded -->
 * Missing support for parsing cyclical data (maybe)
 * Missing error customization -->
 
-#### Joi
+## Joi
 
-[https://github.com/hapijs/joi](https://github.com/hapijs/joi)
+[https://github.com/hapijs/joi](https://github.com/hapijs/joi){:target="_blank"}
 
 Doesn't support static type inference 😕
 
-#### Yup
+## Yup
 
-[https://github.com/jquense/yup](https://github.com/jquense/yup)
+[https://github.com/jquense/yup](https://github.com/jquense/yup){:target="_blank"}
 
 Yup is a full-featured library that was implemented first in vanilla JS, and later rewritten in TypeScript.
 
@@ -81,9 +81,9 @@ Differences
 
 <!-- ¹Yup has a strange interpretation of the word `required`. Instead of meaning "not undefined", Yup uses it to mean "not empty". So `yup.string().required()` will not accept an empty string, and `yup.array(yup.string()).required()` will not accept an empty array. Instead, Yup us Zod arrays there is a dedicated `.nonempty()` method to indicate this, or you can implement it with a custom refinement. -->
 
-#### io-ts
+## io-ts
 
-[https://github.com/gcanti/io-ts](https://github.com/gcanti/io-ts)
+[https://github.com/gcanti/io-ts](https://github.com/gcanti/io-ts){:target="_blank"}
 
 io-ts is an excellent library by gcanti. The API of io-ts heavily inspired the design of Zod.
 
@@ -132,9 +132,9 @@ This more declarative API makes schema definitions vastly more concise.
 - Missing promise schemas
 - Missing function schemas
 
-#### Runtypes
+## Runtypes
 
-[https://github.com/pelotom/runtypes](https://github.com/pelotom/runtypes)
+[https://github.com/pelotom/runtypes](https://github.com/pelotom/runtypes){:target="_blank"}
 
 Good type inference support, but limited options for object type masking (no `.pick` , `.omit` , `.extend` , etc.). No support for `Record` s (their `Record` is equivalent to Zod's `object` ). They DO support branded and readonly types, which Zod does not.
 
@@ -145,9 +145,9 @@ Good type inference support, but limited options for object type masking (no `.p
 - Missing promise schemas
 - Missing error customization
 
-#### Ow
+## Ow
 
-[https://github.com/sindresorhus/ow](https://github.com/sindresorhus/ow)
+[https://github.com/sindresorhus/ow](https://github.com/sindresorhus/ow){:target="_blank"}
 
 Ow is focused on function input validation. It's a library that makes it easy to express complicated assert statements, but it doesn't let you parse untyped data. They support a much wider variety of types; Zod has a nearly one-to-one mapping with TypeScript's type system, whereas ow lets you validate several highly-specific types out of the box (e.g. `int32Array` , see full list in their README).
 

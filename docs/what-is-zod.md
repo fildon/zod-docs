@@ -19,5 +19,5 @@ Some other great aspects:
 - Tiny: 8kb minified + zipped
 - Immutable: methods return a new instance (i.e. [`.optional()`](docs/schema-methods/optional))
 - Concise, chainable interface
-- Functional approach: [parse, don't validate](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/)
+- Functional approach: [parse, don't validate](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/){:target="_blank"}
 - Works with plain JavaScript too! You don't need to use TypeScript.

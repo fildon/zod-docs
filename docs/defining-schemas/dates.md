@@ -26,7 +26,7 @@ const birthday = z.date( {
 ```
 
 ## Coercion
-[MDN Docs: Coercion](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion)
+[MDN Docs: Coercion](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion){:target="_blank"}
 
 z.date() accepts a date, NOT a date string
 ```ts

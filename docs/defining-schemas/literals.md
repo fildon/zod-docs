@@ -33,4 +33,4 @@ const tuna = z.literal( 'tuna', {
 } )
 ```
 
-Currently there is no support for Date or bigint literals in Zod. If you have a use case for this feature, please [file an issue](https://github.com/colinhacks/zod/issues).
+Currently there is no support for Date or bigint literals in Zod. If you have a use case for this feature, please [file an issue](https://github.com/colinhacks/zod/issues){:target="_blank"}.
